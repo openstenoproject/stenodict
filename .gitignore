@@ -1,3 +1,6 @@
+dictionaries
+dictionaries.json
+
 .DS_Store
 .AppleDouble
 .LSOverride
@@ -23,3 +26,10 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+*.log
+node_modules
+dist
+lib
+coverage
+_book

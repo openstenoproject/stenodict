@@ -16,12 +16,10 @@ you with the task of evolving beyond a traditional keyboard.
 
 ## Adding a dictionary
 
-To add a dictionary, you only need to add the dictionary and edit the
-dictionary list. If you are not comfortable making a GitHub Pull Request,
-you are welcome to just submit an issue with the required information
-for a dictionary and we can make the code changes. If you for some reason
-cannot create a GitHub account and still want to submit a dictionary, you
-can always email Ted using the email on his GitHub profile.
+To add a dictionary, you only need to add the dictionary file and edit the
+dictionary list with information about your dictionary.
+
+### What makes a dictionary
 
 The required bits that make up a dictionary are:
 
@@ -36,10 +34,26 @@ what most Plover users are familiar with.
 		- How: explain the theory behind your dictionary, you can use as much detail as you think is necessary. You can use multiple paragraphs: this is where the user is learning how to use your dictionary.
 	+ Tags: the categories that your dictionary fits into. There are a few tags that are pre-defined, you are welcome to define new ones if you feel it is necessary. You can see dictionaries.json for a full list of tags, which, for example, are along the lines of briefs, words, symbols, commands, and shortcuts.
 
-If you have any doubts, just look at dictionaries.json and you'll see how other dictionaries are defined. The JSON format may look a little weird to you, it's just an alternative style called diffy that aims to make maintaining JSON a little bit easier for programmers. Please maintain this style when submitting a PR. If you don't want to style it manually, you can use the npm tool `format-json` which defaults to diffy format.
+There are examples with the other dictionaries in the repository. Because dictionaries
+are manually approved, you can assume that any dictionaries on the site are in a format
+that you can copy for your own submission.
 
-## Dictionaries
+### Option 1. Submit a Pull Request
 
-#### [Unicode Arrows (←↑→↓)](dictionaries/unicode_arrows.md)
+This is the preffered method, if you are familiar with GitHub. Just fork, on the `gh-pages`
+branch add your dictionary to `dictionaries.json` and place your dictionary in the
+`dictionaries` folder.
 
-A small dictionary with strokes to output Unicode arrows.
+The JSON format may look a little weird to you, it's just an alternative style called diffy that aims to make maintaining JSON a little bit easier for programmers. Please maintain this style when submitting a PR. If you don't want to style it manually, you can use the npm tool `format-json` which defaults to diffy format.
+
+### Option 2. Submit an Issue
+
+If you are not comfortable making a GitHub Pull Request,
+you are welcome to just submit an issue with the required information
+for a dictionary and we can make the code changes.
+
+### Option 3. Email
+
+If you for some reason
+cannot create a GitHub account and still want to submit a dictionary, you
+can always email Ted using the email on his GitHub profile.
