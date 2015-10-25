@@ -1,5 +1,13 @@
 # Stenodict
 
+-------
+
+# WIP
+
+Stenodict isn't quite ready to publish. You can star or follow this repository. The site should be up sometime before mid-November
+
+-------
+
 Stenodict aims to help shape how to use stenography in our modern world.
 There is much more to text now than there ever was, between new
 weird words, all the way to extended symbols such as emoji. We type cryptic
