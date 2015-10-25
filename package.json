@@ -19,6 +19,7 @@
     "humps": "^0.6.0",
     "isomorphic-fetch": "^2.2.0",
     "lodash": "^3.10.1",
+    "marked": "^0.3.5",
     "normalizr": "^1.0.0",
     "react": "^0.14.0",
     "react-dom": "^0.14.0",

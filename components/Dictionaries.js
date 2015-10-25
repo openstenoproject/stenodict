@@ -12,8 +12,7 @@ class Dictionaries extends Component {
   }
 }
 
-Dictionaries.propTypes = {
-  dictionaries: React.PropTypes.object.isRequired
-}
+Dictionaries.propTypes = { dictionaries: React.PropTypes.object.isRequired
+                         }
 
 export default Dictionaries

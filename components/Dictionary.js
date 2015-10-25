@@ -1,4 +1,5 @@
 import React, { Component, PropTypes } from 'react'
+import Markdown from './Markdown'
 
 class Dictionary extends Component {
   render() {
@@ -16,8 +17,7 @@ class Dictionary extends Component {
   }
 }
 
-Dictionary.propTypes = {
-  dictionary: React.PropTypes.object.isRequired
-}
+Dictionary.propTypes = { dictionary: React.PropTypes.object.isRequired
+                       }
 
 export default Dictionary
