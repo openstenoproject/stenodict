@@ -1,9 +1,10 @@
 {
-  "name": "redux-real-world-example",
-  "version": "0.0.0",
-  "description": "Redux real-world example",
+  "name": "stenodict",
+  "version": "0.0.1",
+  "description": "Stenodict repository",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "NODE_ENV=production node node_modules/webpack/bin/webpack.js -p --colors --progress --config=./webpack.prod.js"
   },
   "repository": {
     "type": "git",

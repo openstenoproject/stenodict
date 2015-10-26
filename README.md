@@ -64,4 +64,10 @@ for a dictionary and we can make the code changes.
 
 If you for some reason
 cannot create a GitHub account and still want to submit a dictionary, you
-can always email Ted using the email on his GitHub profile.
+can always email [Ted](https://github.com/morinted) using the email on his GitHub profile.
+
+## Development
+
+In order to develop the JavaScript component of the website, in the master branch, run `npm install`. After grabbing the dependencies, you should be able to start a server locally with `npm start`. `npm build` builds to `dist/stenodict.js`. You must copy that to the `gh-pages` branch for deployment.
+
+I was unable to get the dev server to serve static files, so I found that in development, I needed to link to non-relative files for testing. For this, you just modify `actions/index.js`'s URL to an absolute path.

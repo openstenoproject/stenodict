@@ -4,14 +4,14 @@ import Markdown from './Markdown'
 class Dictionary extends Component {
   render() {
     const { dictionary } = this.props
-    console.log(dictionary)
     return (
       <li>
         <b>{ `${dictionary.name}: ` }</b>
         { `${dictionary.description.what} -- ` }
-        <a href={`http://tedmor.in/stenodict/dictionaries/${dictionary.filename}`} download>
+        <a href={`dictionaries/${dictionary.filename}`}>
           Download
         </a>
+        <Markdown paragraphs={dictionary.description.how}></Markdown>
       </li>
     )
   }

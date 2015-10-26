@@ -10,7 +10,7 @@ export function fetchDictionaries() {
     dispatch({ type: LOAD_DICTIONARIES
              , status: FETCHING
              })
-    fetchJSON('http://www.tedmor.in/stenodict/dictionaries.json')
+    fetchJSON('dictionaries.json')
       .then(({ tags, dictionaries }) => {
         dispatch({ type: LOAD_DICTIONARIES
                  , status: SUCCESS
