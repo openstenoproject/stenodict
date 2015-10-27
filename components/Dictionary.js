@@ -4,20 +4,23 @@ import Markdown from './Markdown'
 class Dictionary extends Component {
   render() {
     const { dictionary } = this.props
+    console.log(dictionary)
     return (
-      <li>
-        <b>{ `${dictionary.name}: ` }</b>
-        { `${dictionary.description.what} -- ` }
-        <a href={`dictionaries/${dictionary.filename}`}>
+      <div>
+        <h1>{ dictionary.name }</h1>
+        <h3>{ dictionary.description.what}</h3>
+        <h2>Why</h2>
+        <Markdown>{dictionary.description.why}</Markdown>
+        <h2>How</h2>
+        <Markdown paragraphs={dictionary.description.how}/>
+        <h3><a href={`dictionaries/${dictionary.filename}`}>
           Download
-        </a>
-        <Markdown paragraphs={dictionary.description.how}></Markdown>
-      </li>
+        </a></h3>
+      </div>
     )
   }
 }
 
-Dictionary.propTypes = { dictionary: React.PropTypes.object.isRequired
-                       }
+Dictionary.propTypes = { dictionary: PropTypes.object }
 
 export default Dictionary

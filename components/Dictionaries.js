@@ -1,12 +1,14 @@
 import React, { Component, PropTypes } from 'react'
-import Dictionary from './Dictionary'
+import DictionaryItem from './DictionaryItem'
 
 class Dictionaries extends Component {
   render() {
     const { dictionaries } = this.props
+    let list = dictionaries.list
     return (
       <ul>
-        { dictionaries.list.map(x => (<Dictionary key={x.filename} dictionary={x} />)) }
+        { Object.keys(list).map(x =>
+          (<DictionaryItem key={x} dictionary={list[x]} />)) }
       </ul>
     )
   }
