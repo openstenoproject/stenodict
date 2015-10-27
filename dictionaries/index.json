@@ -9,9 +9,13 @@
   , "7": "multilingual"
   , "8": "program-specific"
   , "9": "meta"
+  , "10": "windows-specific"
+  , "11": "linux-specific"
+  , "12": "mac-specific"
   }
 , "dictionaries":
-  [ { "name": "Arrows"
+  { "unicode_arrows.json":
+    { "name": "Arrows"
     , "filename": "unicode_arrows.json"
     , "description":
       { "what": "Symbolic arrows → → made easy"
@@ -26,5 +30,5 @@
       [ 6
       ]
     }
-  ]
+  }
 }
