@@ -8,7 +8,7 @@ class DictionaryItem extends Component {
     return (
       <li>
         <b>{ `${dictionary.name}: ` }</b>
-        { `${dictionary.description.what} -- ` }
+        { `${dictionary.what} -- ` }
         <Link to={`dictionary/${dictionary.filename}`}>
           View
         </Link>

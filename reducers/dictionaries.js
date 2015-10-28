@@ -1,31 +1,36 @@
-import { LOAD_DICTIONARIES, FETCHING, SUCCESS, FAILURE } from '../actions'
+import { LOAD_DICTIONARIES
+       , FETCHING
+       , SUCCESS
+       , FAILURE
+       , GET_DETAILS
+       } from '../actions'
 
 export default function dictionaries(state = { fetching: false
-                                             , list: []
+                                             , list: {}
                                              , error: null
+                                             , details: {}
                                              }
                                     , action
                                     ) {
   switch (action.type) {
   case LOAD_DICTIONARIES:
     switch (action.status) {
-      case FETCHING:
-        return { ...state
-               , fetching: true
-               , error: null
-               }
-      case SUCCESS:
-        return { ...state
-               , fetching: false
-               , list: action.dictionaries
-               }
-      case FAILURE:
-        return { ...state
-               , fetching: false
-               , error: action.error
-               }
+    case FETCHING:
+      return { ...state
+             , fetching: true
+             , error: null
+             }
+    case SUCCESS:
+      return { ...state
+             , fetching: false
+             , list: action.dictionaries
+             }
+    case FAILURE:
+      return { ...state
+             , fetching: false
+             , error: action.error
+             }
     }
-  	return state
   default:
     return state
   }
