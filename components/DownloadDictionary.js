@@ -1,20 +1,19 @@
 import React, { Component, PropTypes } from 'react'
+import { Button, Label } from 'react-bootstrap'
 import Markdown from './Markdown'
 
 class DownloadDictionary extends Component {
   render() {
     const { dictFormats, formats, filename, name } = this.props
     const links = dictFormats.map(x => (
-      <li key={x}>
-      <a href={`dictionaries/${filename}.${formats[x]}`}>
-        Download {name} [{formats[x].toUpperCase()}]
-      </a>
-      </li>
+      <Button href={`dictionaries/${filename}.${formats[x]}`} bsStyle="primary" key={x}>
+        Download {name} &nbsp;&nbsp;<Label bsStyle="info">{formats[x].toUpperCase()}</Label>
+    </Button>
     ))
     return (
-      <ul>
+      <div>
         { links }
-      </ul>
+      </div>
     )
   }
 }

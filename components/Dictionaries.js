@@ -1,15 +1,30 @@
 import React, { Component, PropTypes } from 'react'
+import { Table } from 'react-bootstrap'
 import DictionaryItem from './DictionaryItem'
 
 class Dictionaries extends Component {
   render() {
     const { dictionaries } = this.props
-    let list = dictionaries.list
+    let tableContent
+    if (dictionaries.fetching) {
+      tableContent = (<tr><td colSpan="2">Loading dictionaries...</td></tr>)
+    } else {
+      let list = dictionaries.list
+      tableContent = Object.keys(list).map(x =>
+        (<DictionaryItem key={x} dictionary={list[x]} />))
+    }
+
     return (
-      <ul>
-        { Object.keys(list).map(x =>
-          (<DictionaryItem key={x} dictionary={list[x]} />)) }
-      </ul>
+      <Table striped bordered hover>
+        <thead>
+          <tr>
+            <th>Dictionaries</th>
+          </tr>
+        </thead>
+        <tbody>
+          { tableContent }
+        </tbody>
+      </Table>
     )
   }
 }
