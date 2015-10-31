@@ -20,6 +20,7 @@
 , "dictionaries":
   { "unicode_arrows":
     { "name": "Arrows"
+    , "author": "Ted Morin"
     , "filename": "unicode_arrows"
     , "what": "Symbolic arrows → → made easy"
     , "tags":
@@ -29,18 +30,18 @@
       [ 0
       ]
     }
-  , "extended_navigation":
-    { "name": "Plover Movement, Extended"
-    , "filename": "extended_navigation"
-    , "what": "Powerful extensions to the default Plover movement keys"
+  , "markdown":
+    { "name": "Markdown"
+    , "author": "Ted Morin"
+    , "filename": "markdown"
+    , "what": "Best markup language meets best text entry system"
     , "tags":
-      [ 2
-      , 10
-      , 11
+      [ 3
+      , 4
+      , 6
       ]
     , "formats":
       [ 0
-      , 1
       ]
     }
   }
