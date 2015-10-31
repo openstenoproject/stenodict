@@ -9,8 +9,8 @@ module.exports = {
   ],
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: '/static/'
+    filename: 'stenodict.js',
+    publicPath: '/javascripts/'
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
