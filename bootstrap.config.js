@@ -30,6 +30,7 @@ module.exports = {
     "tables": true,
     "grid": true,
     "utilities": true,
+    "responsive-utilities": true,
     "dropdowns": true
   }
 }

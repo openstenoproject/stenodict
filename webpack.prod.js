@@ -11,8 +11,8 @@ module.exports = {
     ],
   output: {
     path: path.join(__dirname, '../gh-pages'),
-    filename: 'static/stenodict-[hash:4].js',
-    publicPath: '/'
+    filename: 'stenodict-[hash:4].js',
+    publicPath: ''
   },
   plugins: [
     new HtmlWebpackPlugin(
@@ -29,7 +29,7 @@ module.exports = {
         'NODE_ENV': '"production"'
       }
     }),
-    new ExtractTextPlugin("static/style-[contenthash:4].css")
+    new ExtractTextPlugin("style-[contenthash:4].css")
   ],
   module:
     { loaders:
