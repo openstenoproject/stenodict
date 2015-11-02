@@ -7,7 +7,7 @@ class DownloadDictionary extends Component {
     const { dictFormats, formats, filename, name } = this.props
     const links = dictFormats.map(x => (
       <Button href={`dictionaries/${filename}.${formats[x]}`} bsStyle="primary" key={x}>
-        Download {name} &nbsp;&nbsp;<Label bsStyle="info">{formats[x].toUpperCase()}</Label>
+        Download {`${name}  `}<Label bsStyle="info">{formats[x].toUpperCase()}</Label>
     </Button>
     ))
     return (

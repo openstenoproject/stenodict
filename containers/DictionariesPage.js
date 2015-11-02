@@ -8,12 +8,14 @@ class DictionariesPage extends Component {
     const { children, dictionaries } = this.props;
     return (
       <Row>
-        <Col mdPush={10} md={2}>
-          <Panel>
-            [Pretend that I'm a set of filters. Pew, pew!]
-          </Panel>
+        <Col md={3}>
+          <h4>Filter</h4>
+          <p>
+            There will be filters here, soon!
+          </p>
         </Col>
-        <Col mdPull={2} md={10}>
+        <Col md={9}>
+          <h4>Dictionaries</h4>
           <Dictionaries dictionaries={dictionaries} />
         </Col>
       </Row>

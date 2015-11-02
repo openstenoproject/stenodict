@@ -16,11 +16,6 @@ class Dictionaries extends Component {
 
     return (
       <Table striped bordered hover>
-        <thead>
-          <tr>
-            <th>Dictionaries</th>
-          </tr>
-        </thead>
         <tbody>
           { tableContent }
         </tbody>

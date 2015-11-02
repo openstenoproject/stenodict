@@ -5,11 +5,10 @@
   <meta name="description" content="Stenodict is an open platform for users to share and download eachothers steno dictionaries." />
   <meta name="google" content="nositelinkssearchbox" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
 </head>
-<body>
-  <nav class="navbar navbar-default">
+<body id="body">
+  <nav class="navbar navbar-default" id="stenodict-menu">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -39,11 +38,12 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container-fluid">
-    <div id="root">
+    <div class="panel panel-default" id="root-parent">
+    <div class="panel-body">
+      <div id="root">
+      </div>
+    </div>
     </div>
   </div>
-  <script src="javascripts/stenodict.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 </body>
 </html>

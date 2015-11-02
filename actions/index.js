@@ -11,7 +11,7 @@ export function fetchDictionaries() {
     dispatch({ type: LOAD_DICTIONARIES
              , status: FETCHING
              })
-    fetchJSON('dictionaries.json')
+    fetchJSON(`dictionaries.json`)
       .then(({ tags, dictionaries, formats }) => {
         dispatch({ type: LOAD_DICTIONARIES
                  , status: SUCCESS

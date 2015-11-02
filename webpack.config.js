@@ -1,28 +1,17 @@
-var path = require('path');
-var webpack = require('webpack');
+var webpack = require('webpack')
+var config = require("./webpack.prod.js")
+var HtmlWebpackPlugin = require('html-webpack-plugin')
 
-module.exports = {
-  devtool: 'cheap-module-eval-source-map',
-  entry: [
-    'webpack-hot-middleware/client',
-    './index'
-  ],
-  output: {
-    path: path.join(__dirname, 'dist'),
-    filename: 'stenodict.js',
-    publicPath: '/javascripts/'
-  },
-  plugins: [
+config.devtool = 'cheap-module-eval-source-map'
+config.entry =
+    [ 'webpack-hot-middleware/client'
+    , 'bootstrap-webpack!./bootstrap.config.js'
+    , './index'
+    ]
+config.plugins = [
+    config.plugins[0],
     new webpack.optimize.OccurenceOrderPlugin(),
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
-  ],
-  module: {
-    loaders: [{
-      test: /\.js$/,
-      loaders: ['babel'],
-      exclude: /node_modules/,
-      include: __dirname
-    }]
-  }
-};
+  ]
+module.exports = config
