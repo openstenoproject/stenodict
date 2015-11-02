@@ -44,5 +44,19 @@
       [ 0
       ]
     }
+  , "programming":
+    { "name": "Programming — general"
+    , "author": "Di"
+    , "filename": "programming"
+    , "what": "General briefs to assist developers on the command line"
+    , "tags":
+      [ 3
+      , 4
+      , 6
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
   }
 }
