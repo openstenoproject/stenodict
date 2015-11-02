@@ -44,10 +44,10 @@
       [ 0
       ]
     }
-  , "programming":
-    { "name": "Programming — general"
+  , "commandline":
+    { "name": "Command line — general"
     , "author": "Di"
-    , "filename": "programming"
+    , "filename": "commandline"
     , "what": "General briefs to assist developers on the command line"
     , "tags":
       [ 3
