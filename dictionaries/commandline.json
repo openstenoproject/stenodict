@@ -36,6 +36,5 @@
 "TKPWREP": "grep",
 "TPH*FPB": "env",
 "TPH-PBLG/KP": "nginx",
-"W*GT": "wget",
-"WUZ/WUZ": "{}"
+"W*GT": "wget"
 }

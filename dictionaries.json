@@ -45,14 +45,14 @@
       ]
     }
   , "commandline":
-    { "name": "Command line — general"
+    { "name": "General Command Line"
     , "author": "Di"
     , "filename": "commandline"
-    , "what": "General briefs to assist developers on the command line"
+    , "what": "Briefs and entries for terminal users"
     , "tags":
-      [ 3
+      [ 0
+      , 1
       , 4
-      , 6
       ]
     , "formats":
       [ 0
