@@ -18,6 +18,7 @@ module.exports = {
     "normalize": true,
     "print": true,
     "code": true,
+    "component-animations": true,
     "buttons": true,
     "labels": true,
     "panels": true,

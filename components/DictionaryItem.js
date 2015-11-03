@@ -8,12 +8,14 @@ class DictionaryItem extends Component {
   render() {
     const { dictionary } = this.props
     const dictUrl = `dictionary/${dictionary.filename}`
-    const dictName = `${dictionary.name}`
+    const dictName = dictionary.name
+    const dictAuthor = dictionary.author
     return (
       <LinkContainer to={dictUrl}>
       <tr style={{cursor: 'pointer'}}>
         <td>
-          <b>{ dictName }</b><br/>{ `${dictionary.what}` }
+          <h4 className="dictionary-name">{ dictName }</h4>
+          <small> by { dictAuthor }</small><br/>{ `${dictionary.what}` }
           <Glyphicon glyph="chevron-right" className="pull-right"/>
           </td>
         </tr>

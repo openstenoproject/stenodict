@@ -68,6 +68,17 @@ can always email [Ted](https://github.com/morinted) using the email on his GitHu
 
 ## Development
 
-In order to develop the JavaScript component of the website, in the master branch, run `npm install`. After grabbing the dependencies, you should be able to start a server locally with `npm start`. `npm build` builds to `dist/stenodict.js`. You must copy that to the `gh-pages` branch for deployment.
+The scripts for the website assume that you have both the `master` and the `gh-pages` branches pulled and available, side-by-side in a parent folder. I.e., you have `stenodict/master` and `stenodict/gh-pages`. To achieve this, you can run these commands wherever you want to store Stenodict for development:
 
-I was unable to get the dev server to serve static files, so I found that in development, I needed to link to non-relative files for testing. For this, you just modify `actions/index.js`'s URL to an absolute path.
+```
+mkdir stenodict && cd stenodict
+git clone https://GitHub.com/morinted/stenodict master
+git clone https://GitHub.com/morinted/stenodict gh-pages && cd gh-pages
+git checkout gh-pages && git branch -D master
+cd .. && pwd && ls
+
+```
+
+Now you will have a `stenodict` directory with folders `master` and `gh-pages` in it.
+
+In order to develop the JavaScript component of the website, in the master branch, run `npm install`. After grabbing the dependencies, you should be able to start a server locally with `npm start`. `npm run build` places your `index.html` and needed files in `../gh-pages`, so it's best to have the folder structure explained above.

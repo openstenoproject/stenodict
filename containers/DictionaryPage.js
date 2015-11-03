@@ -1,7 +1,9 @@
-import React, { Component, PropTypes } from 'react';
-import { connect } from 'react-redux';
+import React, { Component, PropTypes } from 'react'
+import { connect } from 'react-redux'
+import { Button, Glyphicon } from 'react-bootstrap'
 import Dictionary from '../components/Dictionary'
 import { fetchDetails } from '../actions'
+import { goBack } from 'redux-router'
 
 class DictionaryPage extends Component {
   constructor() {
@@ -32,11 +34,20 @@ class DictionaryPage extends Component {
       return (<p>Dictionary not found</p>)
     }
     return (
+      <div>
+        <Button href="#">
+          <small>
+            <Glyphicon glyph="chevron-left" />
+          </small>
+          {` Back to List`}
+        </Button>
+        <hr className="dictionary-page"/>
         <Dictionary dictionary={dictionaries.list[this.fname]}
                     details={details[this.fname]}
                     formats={formats}
                     tags={tags} />
-    );
+      </div>
+    )
   }
 }
 
@@ -54,4 +65,4 @@ function mapDispatchToProps(dispatch) {
   return { fetchDetails: x => dispatch(fetchDetails(x)) }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(DictionaryPage);
+export default connect(mapStateToProps, mapDispatchToProps)(DictionaryPage)

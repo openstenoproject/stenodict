@@ -32,7 +32,8 @@ class Dictionary extends Component {
     }
     return (
       <div>
-        <h1>{ dictionary.name }</h1>
+        <h1 className="dictionary-title">{ dictionary.name }</h1>
+        <p>By { dictionary.author }</p>
         <h4>{ dictionary.what}</h4>
         { dictDetails }
       </div>

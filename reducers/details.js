@@ -10,13 +10,19 @@ export default function details(state = {}, action) {
     let { filename } = action
     switch (action.status) {
     case FETCHING:
-      return { [filename]: { isLoading: true }}
+      return { ...state
+             , [filename]: { isLoading: true }
+             }
     case SUCCESS:
       let { why, how } = action
-      return { [filename]: { why, how, isLoading: false }}
+      return { ...state
+             , [filename]: { why, how, isLoading: false }
+             }
     case FAILURE:
       let { error } = action
-      return { [filename]: { isLoading: false, error }}
+      return { ...state
+             , [filename]: { isLoading: false, error }
+             }
     }
   default:
     return state
