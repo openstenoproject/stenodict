@@ -10,8 +10,11 @@ class Dictionaries extends Component {
       tableContent = (<tr><td colSpan="2">Loading dictionaries...</td></tr>)
     } else {
       let list = dictionaries.list
-      tableContent = Object.keys(list).map(x =>
-        (<DictionaryItem key={x} dictionary={list[x]} />))
+      tableContent = Object.keys(list)
+        .sort((a, b) => (list[a].name.localeCompare(list[b].name)))
+        .map(x =>
+          (<DictionaryItem key={x} dictionary={list[x]} />)
+        )
     }
 
     return (

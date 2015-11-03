@@ -15,7 +15,7 @@ class DictionaryItem extends Component {
       <tr style={{cursor: 'pointer'}}>
         <td>
           <h4 className="dictionary-name">{ dictName }</h4>
-          <small> by { dictAuthor }</small><br/>{ `${dictionary.what}` }
+          <small className="author"> by { dictAuthor }</small><br/>{ `${dictionary.what}` }
           <Glyphicon glyph="chevron-right" className="pull-right"/>
           </td>
         </tr>
