@@ -1,19 +1,11 @@
 # Stenodict
 
--------
-
-# WIP
-
-Stenodict isn't quite ready to publish. You can star or follow this repository. The site should be up sometime before mid-November
-
--------
-
 Stenodict aims to help shape how to use stenography in our modern world.
 There is much more to text now than there ever was, between new
 weird words, all the way to extended symbols such as emoji. We type cryptic
 nonsense in the form of programming languages. We use function keys and movement
 keys and modifiers and shortcuts. We have a whole set of problems
-to deal with that the writers of olde never had to deal with.
+to deal with that the *writers of olde* never had to deal with.
 
 If stenography is ever really going to replace a keyboard for everyday use,
 people need to use shortcuts, commands, and preferably they shouldn't have to
@@ -72,8 +64,8 @@ The scripts for the website assume that you have both the `master` and the `gh-p
 
 ```
 mkdir stenodict && cd stenodict
-git clone https://GitHub.com/morinted/stenodict master
-git clone https://GitHub.com/morinted/stenodict gh-pages && cd gh-pages
+git clone https://GitHub.com/openstenoproject/stenodict master
+git clone https://GitHub.com/openstenoproject/stenodict gh-pages && cd gh-pages
 git checkout gh-pages && git branch -D master
 cd .. && pwd && ls
 
