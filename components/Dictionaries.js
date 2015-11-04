@@ -4,14 +4,13 @@ import DictionaryItem from './DictionaryItem'
 
 class Dictionaries extends Component {
   render() {
-    const { dictionaries } = this.props
+    const { dictionaries, filtered } = this.props
     let tableContent
     if (dictionaries.fetching) {
       tableContent = (<tr><td colSpan="2">Loading dictionaries...</td></tr>)
     } else {
       let list = dictionaries.list
-      tableContent = Object.keys(list)
-        .sort((a, b) => (list[a].name.localeCompare(list[b].name)))
+      tableContent = filtered
         .map(x =>
           (<DictionaryItem key={x} dictionary={list[x]} />)
         )
@@ -27,7 +26,8 @@ class Dictionaries extends Component {
   }
 }
 
-Dictionaries.propTypes = { dictionaries: React.PropTypes.object.isRequired
+Dictionaries.propTypes = { dictionaries: PropTypes.object.isRequired
+                         , filtered: PropTypes.array.isRequired
                          }
 
 export default Dictionaries

@@ -5,6 +5,9 @@ export const GET_DETAILS = 'GET_DETAILS'
 export const FETCHING = 'FETCHING'
 export const SUCCESS = 'SUCCESS'
 export const FAILURE = 'FAILURE'
+export const APPLY_FILTERS = 'APPLY_FILTERS'
+export const CLEAR_FILTERS = 'CLEAR_FILTERS'
+export const TOGGLE_FILTER = 'TOGGLE_FILTER'
 
 export function fetchDictionaries() {
   return dispatch => {
@@ -19,6 +22,7 @@ export function fetchDictionaries() {
                  , formats
                  , dictionaries
                  })
+        dispatch(applyFilters())
       })
       .catch(error => {
         dispatch({ type: LOAD_DICTIONARIES
@@ -26,6 +30,40 @@ export function fetchDictionaries() {
                  , error
                  })
       })
+  }
+}
+
+export function toggleFilter({ tag = null, format = null }) {
+  return dispatch => {
+    dispatch(
+      { type: TOGGLE_FILTER
+      , tag
+      , format
+      }
+    )
+    dispatch(applyFilters())
+  }
+  }
+
+export function clearFilters() {
+  return (dispatch, getState) => {
+    const { tags, formats, dictionaries } = getState()
+    dispatch({ type: CLEAR_FILTERS
+             , tags
+             , formats
+             , dictionaries
+             })
+    dispatch(applyFilters())
+  }}
+
+export function applyFilters() {
+  return (dispatch, getState) => {
+    const { tags, formats, dictionaries } = getState()
+    dispatch({ type: APPLY_FILTERS
+             , tags
+             , formats
+             , dictionaries
+             })
   }
 }
 
