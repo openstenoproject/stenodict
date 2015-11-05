@@ -8,12 +8,20 @@ class Dictionaries extends Component {
     let tableContent
     if (dictionaries.fetching) {
       tableContent = (<tr><td colSpan="2">Loading dictionaries...</td></tr>)
-    } else {
+    } else if (filtered.length >= 1) {
       let list = dictionaries.list
       tableContent = filtered
         .map(x =>
           (<DictionaryItem key={x} dictionary={list[x]} />)
         )
+    } else if (filtered.length === 0 &&
+               Object.keys(dictionaries.list).length > 0) {
+      return (<em>No dictionaries match all the selected filters.</em>)
+    } else {
+      // This should not show up
+      // because dictionaries.list shouldn't
+      // be handed in empty.
+      return (<em>No dictionaries found.</em>)
     }
 
     return (

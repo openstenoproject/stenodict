@@ -13,10 +13,15 @@ class FilterWidget extends Component {
         <div className="filters">
         <h5>Tags</h5>
         <Button bsStyle="link" onClick={clearFilters}>Clear</Button>
-        { Object.keys(tags).map(x => (
-            <Button bsStyle={ tags[x].selected ? 'primary' : 'default' }
-              onClick={this.toggleBy({ tag: x })} key={x}>{tags[x].label}</Button>
-        )) }
+        { Object.keys(tags)
+            .sort((a, b) => tags[a].label.localeCompare(tags[b].label))
+            .map(x =>
+              ( <Button bsStyle={ tags[x].selected ? 'primary' : 'default' }
+                  onClick={this.toggleBy({ tag: x })} key={x}>{tags[x].label}
+                </Button>
+              )
+            )
+        }
         </div>
         )
       }

@@ -6,8 +6,12 @@ class DownloadDictionary extends Component {
   render() {
     const { dictFormats, formats, filename, name } = this.props
     const links = dictFormats.map(x => (
-      <Button href={`dictionaries/${filename}.${formats[x]}`} bsStyle="primary" key={x}>
-        Download {`${name}  `}<Label bsStyle="info">{formats[x].toUpperCase()}</Label>
+      <Button href={`dictionaries/${filename}.${formats[x]}`}
+              bsStyle="primary" key={x} download={filename}>
+        Download { name }
+        <Label bsStyle="info" style={{ marginLeft: 10 }}>
+        {formats[x].toUpperCase()}
+        </Label>
     </Button>
     ))
     return (
