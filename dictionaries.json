@@ -30,20 +30,6 @@
       [ 0
       ]
     }
-  , "markdown":
-    { "name": "Markdown"
-    , "author": "Ted Morin"
-    , "filename": "markdown"
-    , "what": "Best markup language meets best text entry system"
-    , "tags":
-      [ 3
-      , 4
-      , 6
-      ]
-    , "formats":
-      [ 0
-      ]
-    }
   , "commandline":
     { "name": "General Command Line"
     , "author": "Di"
@@ -58,5 +44,34 @@
       [ 0
       ]
     }
+  , "left_mac_movement":
+    { "name": "Left-side Mac Movement"
+    , "author": "Achim Siebert"
+    , "filename": "left_mac_movement"
+    , "what": "Left movement shortcuts with selection for Mac."
+    , "tags":
+      [ 2
+      , 3
+      , 12
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
+  , "markdown":
+    { "name": "Markdown"
+    , "author": "Ted Morin"
+    , "filename": "markdown"
+    , "what": "Best markup language meets best text entry system"
+    , "tags":
+      [ 3
+      , 4
+      , 6
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
+
   }
 }
