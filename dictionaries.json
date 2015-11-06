@@ -30,6 +30,18 @@
       [ 0
       ]
     }
+  , "emoji":
+    { "name": "Emoji"
+    , "author": "Ted Morin"
+    , "filename": "emoji"
+    , "what": "Complete Emoji dictionary 😃"
+    , "tags":
+      [ 6
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
   , "commandline":
     { "name": "General Command Line"
     , "author": "Di"
