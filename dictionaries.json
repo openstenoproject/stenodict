@@ -9,9 +9,10 @@
   , "7": "Multilingual"
   , "8": "Program-specific"
   , "9": "Meta"
-  , "10": "OS-Specific: Windows"
-  , "11": "OS-Specific: Linux"
-  , "12": "OS-specific: Mac"
+  , "10": "OS: Windows"
+  , "11": "OS: Linux"
+  , "12": "OS: Mac"
+  , "13": "Captioning"
   }
 , "formats":
   { "0": "json"
@@ -84,6 +85,23 @@
       [ 0
       ]
     }
-
+  , "vim_captioning":
+    { "name": "Vim Captioning"
+    , "author": "Mirabai"
+    , "filename": "vim_captioning"
+    , "what": "Useful realtime captioning commands for Vim"
+    , "tags":
+      [ 2
+      , 3
+      , 8
+      , 10
+      , 11
+      , 13
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
   }
+
 }
