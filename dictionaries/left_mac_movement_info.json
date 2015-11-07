@@ -1,5 +1,5 @@
 { "filename": "left_mac_movement"
-, "version": 1
+, "version": 2
 , "why": "This dictionary aims to solve the problem of moving the cursor around. Unlike Plover's default, this dictionary uses an arrow cluster made up of keys on the *left* side of the steno layout, in order to better simulate the WASD-cluster that you may be used to. This dictionary was designed on a Mac."
 , "how":
   [ "`P-` is up, `W-` is down, `K-` is left, and `R-` is right."
@@ -8,6 +8,7 @@
   , "To select while moving (adding the Shift key), the right hand becomes `*RBLG`."
   , "To select and jump by word (Shift and Option), use `*RBLGS` on the right hand."
   , "To jump lines or to the top or bottom of the file (adding Command), use `*RPB`."
-  , "Finally, for Control-Option combinations, use `*RLGTS` for the right hand."
+  , "Control combinations, use `*RLGTS` for the right hand."
+  , "Finally, for Control-Option combinations, use `*RPBLT` for the right hand."
   ]
 }

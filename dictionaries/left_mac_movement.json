@@ -19,8 +19,12 @@
 "W*RBLT": "{^}{#Alt_L(Down)}{^}",
 "K*RBLT": "{^}{#Alt_L(Left)}{^}",
 "R*RBLT": "{^}{#Alt_L(Right)}{^}",
-"P*RLGTS": "{^}{#Control_L(Alt_L(Up))}{^}",
-"W*RLGTS": "{^}{#Control_L(Alt_L(Down))}{^}",
-"K*RLGTS": "{^}{#Control_L(Alt_L(Left))}{^}",
-"R*RLGTS": "{^}{#Control_L(Alt_L(Right))}{^}"
+"P*RLGTS": "{^}{#Control_L(Up)}{^}",
+"W*RLGTS": "{^}{#Control_L(Down)}{^}",
+"K*RLGTS": "{^}{#Control_L(Left)}{^}",
+"R*RLGTS": "{^}{#Control_L(Right)}{^}",
+"P*RPBLT": "{^}{#Control_L(Alt_L(Up))}{^}",
+"W*RPBLT": "{^}{#Control_L(Alt_L(Down))}{^}",
+"K*RPBLT": "{^}{#Control_L(Alt_L(Left))}{^}",
+"R*RPBLT": "{^}{#Control_L(Alt_L(Right))}{^}"
 }
