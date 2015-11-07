@@ -1,4 +1,5 @@
 { "filename": "unicode_arrows"
+, "version": 1
 , "why": "The only reason that symbolic arrows aren't more widely used is the difficulty of activating them with a regular keyboard. Stenography allows us to make this trivially easy. Think of the pretty documents you could write, or the silly puns that you could make. All that's ← is for you to come ↑ with ideas of how to use them!"
 , "how":
   [ "The strokes are defined based off of Plover's default arrow movements. For moving the cursor in Plover, you tend to use `STPH-` plus `RPBG` which acts as a WASD-like cluster. Quite simply, you use the keys like an arrow keypad, such that `R` is left \u2190, `P` is up \u2191, `B` is down \u2193, and `G` is right \u2192."

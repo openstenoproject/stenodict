@@ -1,4 +1,5 @@
 { "filename": "markdown"
+, "version": 1
 , "why": "Markdown is an ever-popular markup language that you can use in many places, including in plaintext in your text editor. It is used on GitHub, reddit, and more websites, and also looks good in plaintext. With stenography, we can write Markdown with ease, given the right strokes."
 , "how":
   [ "There is a lot to Markdown syntax, so here's how it's been solved, bit by bit. But before you start, this dictionary adds the word Markdown to the dictionary (`PHARBG/TKO*UPB`)."

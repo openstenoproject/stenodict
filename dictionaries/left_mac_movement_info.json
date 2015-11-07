@@ -1,4 +1,5 @@
 { "filename": "left_mac_movement"
+, "version": 1
 , "why": "This dictionary aims to solve the problem of moving the cursor around. Unlike Plover's default, this dictionary uses an arrow cluster made up of keys on the *left* side of the steno layout, in order to better simulate the WASD-cluster that you may be used to. This dictionary was designed on a Mac."
 , "how":
   [ "`P-` is up, `W-` is down, `K-` is left, and `R-` is right."

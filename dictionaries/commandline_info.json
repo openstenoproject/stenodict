@@ -1,4 +1,5 @@
 { "filename": "commandline"
+, "version": 1
 , "why": "This is a general dictionary that programmers and web developers may find useful. It includes common command line tools, filetypes, packages, and some symbols as they are used in conjunction with commands."
 , "how":
   [ "#### Basics"
