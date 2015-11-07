@@ -1,13 +1,19 @@
 import React, { Component, PropTypes } from 'react'
-import { Button, Label } from 'react-bootstrap'
+import { Button, Label, Glyphicon } from 'react-bootstrap'
 import Markdown from './Markdown'
 
 class DownloadDictionary extends Component {
   render() {
-    const { dictFormats, formats, filename, name } = this.props
+    const { dictFormats
+          , formats
+          , filename
+          , name
+          , version
+          } = this.props
     const links = dictFormats.map(x => (
       <Button href={`dictionaries/${filename}.${formats[x]}`}
-              bsStyle="primary" key={x} download={filename}>
+              bsStyle="primary" key={x} download={`${filename}_v${version}`}>
+        <Glyphicon glyph="download" style={{ marginRight: 10 }}/>
         Download { name }
         <Label bsStyle="info" style={{ marginLeft: 10 }}>
         {formats[x].toUpperCase()}
@@ -22,10 +28,11 @@ class DownloadDictionary extends Component {
   }
 }
 
-DownloadDictionary.propTypes = { formats: PropTypes.object
-                               , dictFormats: PropTypes.array
-                               , name: PropTypes.string
-                               , filename: PropTypes.string
+DownloadDictionary.propTypes = { formats: PropTypes.object.isRequired
+                               , dictFormats: PropTypes.array.isRequired
+                               , name: PropTypes.string.isRequired
+                               , filename: PropTypes.string.isRequired
+                               , version: PropTypes.number.isRequired
                                }
 
 export default DownloadDictionary

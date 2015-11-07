@@ -35,13 +35,6 @@ class DictionaryPage extends Component {
     }
     return (
       <div>
-        <Button href="#">
-          <small>
-            <Glyphicon glyph="chevron-left" />
-          </small>
-          {` Back to List`}
-        </Button>
-        <hr className="dictionary-page"/>
         <Dictionary dictionary={dictionaries.list[this.fname]}
                     details={details[this.fname]}
                     formats={formats}

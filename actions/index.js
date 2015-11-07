@@ -74,11 +74,12 @@ export function fetchDetails(filename: string) {
              , filename
              })
     fetchJSON(`dictionaries/${filename}_info.json`)
-     .then(({ why, how }) => {
+     .then(({ why, how, version }) => {
        dispatch({ type: GET_DETAILS
                 , status: SUCCESS
                 , why
                 , how
+                , version
                 , filename
                 })
      })

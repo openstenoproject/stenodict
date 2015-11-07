@@ -14,9 +14,9 @@ export default function details(state = {}, action) {
              , [filename]: { isLoading: true }
              }
     case SUCCESS:
-      let { why, how } = action
+      let { why, how, version = 1 } = action
       return { ...state
-             , [filename]: { why, how, isLoading: false }
+             , [filename]: { why, how, version, isLoading: false }
              }
     case FAILURE:
       let { error } = action
