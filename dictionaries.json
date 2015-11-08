@@ -31,6 +31,36 @@
       [ 0
       ]
     }
+  , "cross_platform_movement":
+    { "name": "Cross Platform Movement"
+    , "author": "Ted Morin"
+    , "filename": "cross_platform_movement"
+    , "what": "Movement and selection across Mac, Windows, and Linux"
+    , "tags":
+      [ 2
+      , 3
+      , 10
+      , 11
+      , 12
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
+  , "movement_di":
+    { "name": "Di's Mac Movement"
+    , "author": "Di"
+    , "filename": "movement_di"
+    , "what": "Extensive movement Mac movement and selection"
+    , "tags":
+      [ 2
+      , 3
+      , 12
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
   , "emoji":
     { "name": "Emoji"
     , "author": "Ted Morin"

@@ -8,7 +8,7 @@
   , "To select while moving (adding the Shift key), the right hand becomes `*RBLG`."
   , "To select and jump by word (Shift and Option), use `*RBLGS` on the right hand."
   , "To jump lines or to the top or bottom of the file (adding Command), use `*RPB`."
-  , "Control combinations, use `*RLGTS` for the right hand."
+  , "To move between spaces, use control combinations, use `*RLGTS` for the right hand."
   , "Finally, for Control-Option combinations, use `*RPBLT` for the right hand."
   ]
 }
