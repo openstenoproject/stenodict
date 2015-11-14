@@ -101,6 +101,20 @@
       [ 0
       ]
     }
+  , "spectacle":
+    { "name": "Spectacle"
+    , "author": "Ted Morin"
+    , "filename": "spectacle"
+    , "what": "Window management with Spectacle, the free application for OS X."
+    , "tags":
+      [ 2
+      , 8
+      , 12
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
   , "markdown":
     { "name": "Markdown"
     , "author": "Ted Morin"
