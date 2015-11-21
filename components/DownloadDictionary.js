@@ -12,7 +12,7 @@ class DownloadDictionary extends Component {
           } = this.props
     const links = dictFormats.map(x => (
       <Button href={`dictionaries/${filename}.${formats[x]}`}
-              bsStyle="primary" key={x} download={`${filename}_v${version}`}>
+              bsStyle="primary" key={x} download={`${filename}_v${version}.${formats[x]}`}>
         <Glyphicon glyph="download" style={{ marginRight: 10 }}/>
         Download { name }
         <Label bsStyle="info" style={{ marginLeft: 10 }}>
