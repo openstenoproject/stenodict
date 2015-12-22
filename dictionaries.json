@@ -91,7 +91,7 @@
     { "name": "Left-side Mac Movement"
     , "author": "Achim Siebert"
     , "filename": "left_mac_movement"
-    , "what": "Left movement shortcuts with selection for Mac."
+    , "what": "Left movement shortcuts with selection for Mac"
     , "tags":
       [ 2
       , 3
@@ -105,7 +105,7 @@
     { "name": "Spectacle"
     , "author": "Ted Morin"
     , "filename": "spectacle"
-    , "what": "Window management with Spectacle, the free application for OS X."
+    , "what": "Window management with Spectacle, the free application for OS X"
     , "tags":
       [ 2
       , 8
@@ -124,6 +124,18 @@
       [ 3
       , 4
       , 6
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
+  , "pokemon":
+    { "name": "Pokémon"
+    , "author": "Ted Morin"
+    , "filename": "pokemon"
+    , "what": "First 151 Pokémon written with Plover theory"
+    , "tags":
+      [ 0
       ]
     , "formats":
       [ 0
