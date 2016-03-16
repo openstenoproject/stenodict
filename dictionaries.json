@@ -141,6 +141,19 @@
       [ 0
       ]
     }
+  , "uk":
+    { "name": "UK Spellings"
+    , "author": "Ted Morin"
+    , "filename": "uk"
+    , "what": "Replace US spellings in Plover's default dictionary."
+    , "tags":
+      [ 0
+      , 2
+      ]
+    , "formats":
+      [ 0
+      ]
+    }
   , "vim_captioning":
     { "name": "Vim Captioning"
     , "author": "Mirabai"
