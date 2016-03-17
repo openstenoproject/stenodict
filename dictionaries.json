@@ -152,6 +152,7 @@
       ]
     , "formats":
       [ 0
+      , 1
       ]
     }
   , "vim_captioning":
