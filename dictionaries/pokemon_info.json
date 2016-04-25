@@ -1,7 +1,0 @@
-{ "filename": "pokemon"
-, "version": 1
-, "why": "If you grew up with the likes of Pikachu, Gyarados, and Charizard, why leave them behind?"
-, "how":
-  [ "This dictionary contains the first 151 Pokemon, from Bulbasaur to Mew. It's all phonetic-based, using mainly Plover theory. \"Pokemon\" and \"Pokémon\" are also included."
-  ]
-}

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+<article class="dictionary" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="dictionary-header">
+  <div class="row">
+    <div class="col-md-3 col-sm-2 col-xs-12">
+      <a class="btn btn-default" href="/stenodict/">
+        <small>
+          <span class="glyphicon glyphicon-chevron-left">
+          </span>
+        </small>
+        Back to List
+      </a>
+    </div>
+    <div class="text-right col-md-9 col-sm-10 col-xs-12">
+      {% for format in page.formats %}
+      <a href="{{ page.filename | append: '.' | append: format | prepend: site.path }}" style="margin-left:0;" download="{{ page.filename | append: '_v' | append: page.version | append: '.' | append: format }}" class="btn btn-primary" role="button">
+        {% if forloop.index == 1 %}
+        <span style="margin-right:10px;" class="glyphicon glyphicon-download"></span>
+          Download {{ page.title }}
+          <span style="margin-left:10px;" class="label label-info">
+            {{ format | upcase }}
+          </span>
+        {% else %}
+        <span class="label label-info">
+          {{ format | upcase }}
+        </span>
+        {% endif %}
+
+      </a>
+  {% endfor %}
+      
+    </div>
+  </div>
+  <hr class="dictionary-page">
+    <h1 class="dictionary-title" itemprop="name headline">{{ page.title }}
+    <small>v{{ page.version }}</small>
+
+    </h1>
+    <p class="author" itemprop="author">By {{ page.author }}, updated {{ page.date | date_to_string }}</h3>
+    <h4>{{ page.what }}</h3>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+</article>

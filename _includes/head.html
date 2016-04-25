@@ -1,0 +1,40 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>{% if page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      var aLocation = window.location.href
+        console.log(aLocation)
+      // Stenodict URL should have:
+      // /#/
+      // Trailing ?
+      // dictionary
+      function containsAll (list, url) {
+        for (var i = 0; i < list.length; i++) {
+          if (url.indexOf(list[i]) === -1) {
+            return false
+          }
+        }
+        return true
+      }
+      if (containsAll(['/#/', '/dictionary/'], aLocation)) {
+        aLocation = aLocation.replace('/#/', '/')
+        aLocation = aLocation.replace('/dictionary/', '/dictionaries/')
+        aLocation = aLocation.split('?')[0]
+        aLocation += '.html'
+        window.location.replace(aLocation)
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}">
+</head>
