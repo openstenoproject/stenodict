@@ -1,0 +1,16 @@
+# Site settings
+title: Stenodict
+email: plover@ploversteno.org
+description: >
+  Stenodict is an open platform for users to share and download each other's
+  steno dictionaries.
+baseurl: "/stenodict" # the subpath of your site, e.g. /blog
+url: "http://openstenoproject.org" # the base hostname & protocol for your site
+twitter_username: plover
+github_username:  openstenoproject
+collections:
+  dictionaries:
+    output: true
+
+# Build settings
+markdown: kramdown

@@ -1,0 +1,1644 @@
+---
+layout: dictionary
+title: Emoji
+version: 5
+date: 2015-12-23
+filename: emoji
+author: Ted Morin
+tags: symbols
+what: Complete Emoji dictionary 😃
+formats:
+  - json
+---
+
+## Why
+
+1600+ emoji are now at your fingertips, more than they ever have been before. This dictionary uses the same shortnames that are used on many websites, like the [Emoji Codes Cheat Sheet](http://www.emoji.codes/). The shortnames for this dictionary were gathered from [Emoji One](http://emojione.com/), a libre Emoji project with fantastic free art.
+
+## How
+
+The emoji (`AOE/PHOEPBLG`) are all started with one stroke: `PHOEPBLG` (`MOEJ`), which is set to `{#}`, meaning it will output nothing. Then, you write the phrase for each emoji (e.g. `grin` or `cry` or `green heart`), then the emoji will be output. (😁, 😢, 💚)
+
+Note: **versions 2.x of Plover do not support emoji completely. You will have to wait for the version 3. Apologies.** Also, you may not see all the emoji on your device because these are native unicode emojis, not images. Support varies between browsers and operating systems. It's okay, use the ones that work for you now and more may come in the future!
+
+Of important note are numbered strokes. Most strokes ending in `2` signal an alternative, e.g. `star` ⭐ and `star 2` 🌟. The 2 is stroked with the number bar, as you might imagine. However, there are also the emoji that are numbers; `MOEJ/WUN` will output the 1 emoji.
+
+The other tricky set are the clocks. Simply `MOEJ/KLOK` and then the time, e.g. `5` or `#A` will output 🕔. Then add `30K` or `#POBG` to make 5:30; 🕠. Also, in this dictionary, `11` is `1-D`.
+
+Emoji with multiple ways to stroke them (e.g. grey ! and gray !) have multiple sentences that you can write, each separated by a comma.
+
+#### Without further ado, the list!
+
+- 💯: 100
+- 🔢: 1234
+- 😀: grinning
+- 😬: grimacing
+- 😁: grin
+- 😂: joy
+- 😃: smiley
+- 😄: smile
+- 😅: sweat smile
+- 😆: laughing
+- 😇: innocent
+- 😉: wink
+- 😊: blush
+- 🙂: slight smile
+- 🙃: upside down
+- ☺: relaxed
+- 😋: yum
+- 😌: relieved
+- 😍: heart eyes
+- 😘: kissing heart
+- 😗: kissing
+- 😙: kissing smiling eyes
+- 😚: kissing closed eyes
+- 😜: stuck out tongue winking eye
+- 😝: stuck out tongue closed eyes
+- 😛: stuck out tongue
+- 🤑: money mouth
+- 🤓: nerd
+- 😎: sunglasses
+- 🤗: hugging
+- 😏: smirk
+- 😶: no mouth
+- 😐: neutral face
+- 😑: expressionless
+- 😒: unamused
+- 🙄: rolling eyes
+- 🤔: thinking
+- 😳: flushed
+- 😞: disappointed
+- 😟: worried
+- 😠: angry
+- 😡: rage
+- 😔: pensive
+- 😕: confused
+- 🙁: slight frown
+- ☹: frowning 2
+- 😣: persevere
+- 😖: confounded
+- 😫: tired face
+- 😩: weary
+- 😤: triumph
+- 😮: open mouth
+- 😱: scream
+- 😨: fearful
+- 😰: cold sweat
+- 😯: hushed
+- 😦: frowning
+- 😧: anguished
+- 😢: cry
+- 😥: disappointed relieved
+- 😪: sleepy
+- 😓: sweat
+- 😭: sob
+- 😵: dizzy face
+- 😲: astonished
+- 🤐: zipper mouth
+- 😷: mask
+- 🤒: thermometer face
+- 🤕: head bandage
+- 😴: sleeping
+- 💤: zzz
+- 💩: poop
+- 😈: smiling imp
+- 👿: imp
+- 👹: japanese ogre
+- 👺: japanese goblin
+- 💀: skull
+- 👻: ghost
+- 👽: alien
+- 🤖: robot
+- 😺: smiley cat
+- 😸: smile cat
+- 😹: joy cat
+- 😻: heart eyes cat
+- 😼: smirk cat
+- 😽: kissing cat
+- 🙀: scream cat
+- 😿: crying cat face
+- 😾: pouting cat
+- 🙌: raised hands
+- 👏: clap
+- 👋: wave
+- 👍: thumbs up
+- 👎: thumbs down
+- 👊: punch
+- ✊: fist
+- ✌: v
+- 👌: okay hand
+- ✋: raised hand
+- 👐: open hands
+- 💪: muscle
+- 🙏: pray
+- ☝: point up
+- 👆: point up 2
+- 👇: point down
+- 👈: point left
+- 👉: point right
+- 🖕: middle finger
+- 🖐: hand splayed
+- 🤘: metal
+- 🖖: vulcan, spock
+- ✍: writing hand
+- 💅: nail care
+- 👄: lips
+- 👅: tongue
+- 👂: ear
+- 👃: nose
+- 👁: eye
+- 👀: eyes
+- 👤: bust in silhouette
+- 👥: busts in silhouette
+- 🗣: speaking head
+- 👶: baby
+- 👦: boy
+- 👧: girl
+- 👨: man
+- 👩: woman
+- 👱: person with blond hair
+- 👴: older man
+- 👵: older woman
+- 👲: man with gua pi mao
+- 👳: man with turban
+- 👮: cop
+- 👷: construction worker
+- 💂: guardsman
+- 🕵: spy
+- 🎅: santa
+- 👼: angel
+- 👸: princess
+- 👰: bride with veil
+- 🚶: walking
+- 🏃: runner
+- 💃: dancer
+- 👯: dancers
+- 👫: couple
+- 👬: two men holding hands
+- 👭: two women holding hands
+- 🙇: bow
+- 💁: information desk person
+- 🙅: no good
+- 🙆: okay woman
+- 🙋: raising hand
+- 🙎: person with pouting face
+- 🙍: person frowning
+- 💇: haircut
+- 💆: massage
+- 💑: couple with heart
+- 👩❤👩: couple ww, couple w w
+- 👨❤👨: couple mm, couple m m
+- 💏: couple kiss
+- 👩❤💋👩: kiss ww, kiss w w
+- 👨❤💋👨: kiss mm, kiss m m
+- 👪: family
+- 👨👩👧: family mwg, family m w g
+- 👨👩👧👦: family mwgb, family m w g b
+- 👨👩👦👦: family mwbb, family m w b b
+- 👨👩👧👧: family m w g g, family m w gg
+- 👩👩👦: family wwb, family w w b, family w wb
+- 👩👩👧: family wwg, family w w g, family w wg
+- 👩👩👧👦: family w w g b
+- 👩👩👦👦: family w w b b
+- 👩👩👧👧: family w w g g, family w w gg
+- 👨👨👦: family m m b
+- 👨👨👧: family m m g
+- 👨👨👧👦: family m m g b
+- 👨👨👦👦: family m m b b
+- 👨👨👧👧: family m m g g, family m m gg
+- 👚: womans clothes
+- 👕: shirt
+- 👖: jeans
+- 👔: necktie
+- 👗: dress
+- 👙: bikini
+- 👘: kimono
+- 💄: lipstick
+- 💋: kiss
+- 👣: footprints
+- 👠: high heel
+- 👡: sandal
+- 👢: boot
+- 👞: mans shoe
+- 👟: athletic shoe
+- 👒: womans hat
+- 🎩: top hat
+- ⛑: helmet with cross
+- 🎓: mortar board
+- 👑: crown
+- 🎒: school satchel
+- 👝: pouch
+- 👛: purse
+- 👜: handbag
+- 💼: briefcase
+- 👓: eyeglasses
+- 🕶: dark sunglasses
+- 💍: ring
+- 🌂: closed umbrella
+- 🐶: dog
+- 🐱: cat
+- 🐭: mouse
+- 🐹: hamster
+- 🐰: rabbit
+- 🐻: bear
+- 🐼: panda face
+- 🐨: koala
+- 🐯: tiger
+- 🦁: lion face
+- 🐮: cow
+- 🐷: pig
+- 🐽: pig nose
+- 🐸: frog
+- 🐙: octopus
+- 🐵: monkey face
+- 🙈: see no evil
+- 🙉: hear no evil
+- 🙊: speak no evil
+- 🐒: monkey
+- 🐔: chicken
+- 🐧: penguin
+- 🐦: bird
+- 🐤: baby chick
+- 🐣: hatching chick
+- 🐥: hatched chick
+- 🐺: wolf
+- 🐗: boar
+- 🐴: horse
+- 🦄: unicorn
+- 🐝: bee
+- 🐛: bug
+- 🐌: snail
+- 🐞: beetle
+- 🐜: ant
+- 🕷: spider
+- 🦂: scorpion
+- 🦀: crab
+- 🐍: snake
+- 🐢: turtle
+- 🐠: tropical fish
+- 🐟: fish
+- 🐡: blowfish
+- 🐬: dolphin
+- 🐳: whale
+- 🐋: whale 2
+- 🐊: crocodile
+- 🐆: leopard
+- 🐅: tiger 2
+- 🐃: water buffalo
+- 🐂: ox
+- 🐄: cow 2
+- 🐪: dromedary camel
+- 🐫: camel
+- 🐘: elephant
+- 🐐: goat
+- 🐏: ram
+- 🐑: sheep
+- 🐎: racehorse
+- 🐖: pig 2
+- 🐀: rat
+- 🐁: mouse 2
+- 🐓: rooster
+- 🦃: turkey
+- 🕊: dove
+- 🐕: dog 2
+- 🐩: poodle
+- 🐈: cat 2
+- 🐇: rabbit 2
+- 🐿: chipmunk
+- 🐾: feet
+- 🐉: dragon
+- 🐲: dragon face
+- 🌵: cactus
+- 🎄: christmas tree
+- 🌲: evergreen tree
+- 🌳: deciduous tree
+- 🌴: palm tree
+- 🌱: seedling
+- 🌿: herb
+- ☘: shamrock
+- 🍀: four leaf clover
+- 🎍: bamboo
+- 🎋: tanabata tree
+- 🍃: leaves
+- 🍂: fallen leaf
+- 🍁: maple leaf
+- 🌾: ear of rice
+- 🌺: hibiscus
+- 🌻: sunflower
+- 🌹: rose
+- 🌷: tulip
+- 🌼: blossom
+- 🌸: cherry blossom
+- 💐: bouquet
+- 🍄: mushroom
+- 🌰: chestnut
+- 🎃: jack o lantern
+- 🐚: shell
+- 🕸: spider web
+- 🌎: earth americas
+- 🌍: earth africa
+- 🌏: earth asia
+- 🌕: full moon
+- 🌖: waning gibbous moon
+- 🌗: last quarter moon
+- 🌘: waning crescent moon
+- 🌑: new moon
+- 🌒: waxing crescent moon
+- 🌓: first quarter moon
+- 🌔: waxing gibbous moon
+- 🌚: new moon with face
+- 🌝: full moon with face
+- 🌛: first quarter moon with face
+- 🌜: last quarter moon with face
+- 🌞: sun with face
+- 🌙: crescent moon
+- ⭐: star
+- 🌟: star 2
+- 💫: dizzy
+- ✨: sparkles
+- ☄: comet
+- ☀: sunny
+- 🌤: white sun small cloud
+- ⛅: partly sunny
+- 🌥: white sun cloud
+- 🌦: white sun rain cloud
+- ☁: cloud
+- 🌧: cloud rain
+- ⛈: thunder cloud rain
+- 🌩: cloud lightning
+- ⚡: zap
+- 🔥: fire
+- 💥: boom
+- ❄: snowflake
+- 🌨: cloud snow
+- ☃: snowman 2
+- ⛄: snowman
+- 🌬: wind blowing face
+- 💨: dash
+- 🌪: cloud tornado
+- 🌫: fog
+- ☂: umbrella 2
+- ☔: umbrella
+- 💧: droplet
+- 💦: sweat drops
+- 🌊: ocean
+- 🍏: green apple
+- 🍎: apple
+- 🍐: pear
+- 🍊: tangerine
+- 🍋: lemon
+- 🍌: banana
+- 🍉: watermelon
+- 🍇: grapes
+- 🍓: strawberry
+- 🍈: melon
+- 🍒: cherries
+- 🍑: peach
+- 🍍: pineapple
+- 🍅: tomato
+- 🍆: eggplant
+- 🌶: hot pepper
+- 🌽: corn
+- 🍠: sweet potato
+- 🍯: honey pot
+- 🍞: bread
+- 🧀: cheese
+- 🍗: poultry leg
+- 🍖: meat on bone
+- 🍤: fried shrimp
+- 🍳: egg
+- 🍔: hamburger
+- 🍟: fries
+- 🌭: hot dog
+- 🍕: pizza
+- 🍝: spaghetti
+- 🌮: taco
+- 🌯: burrito
+- 🍜: ramen
+- 🍲: stew
+- 🍥: fish cake
+- 🍣: sushi
+- 🍱: bento
+- 🍛: curry
+- 🍙: rice ball
+- 🍚: rice
+- 🍘: rice cracker
+- 🍢: oden
+- 🍡: dango
+- 🍧: shaved ice
+- 🍨: ice cream
+- 🍦: ice cream
+- 🍰: cake
+- 🎂: birthday
+- 🍮: custard
+- 🍬: candy
+- 🍭: lollipop
+- 🍫: chocolate bar
+- 🍿: popcorn
+- 🍩: doughnut
+- 🍪: cookie
+- 🍺: beer
+- 🍻: beers
+- 🍷: wine glass
+- 🍸: cocktail
+- 🍹: tropical drink
+- 🍾: champagne
+- 🍶: sake
+- 🍵: tea
+- ☕: coffee
+- 🍼: baby bottle
+- 🍴: fork and knife
+- 🍽: fork knife plate
+- ⚽: soccer
+- 🏀: basketball
+- 🏈: football
+- ⚾: baseball
+- 🎾: tennis
+- 🏐: volleyball
+- 🏉: rugby football
+- 🎱: 8 ball
+- ⛳: golf
+- 🏌: golfer
+- 🏓: ping pong
+- 🏸: badminton
+- 🏒: hockey
+- 🏑: field hockey
+- 🏏: cricket
+- 🎿: ski
+- ⛷: skier
+- 🏂: snowboarder
+- ⛸: ice skate
+- 🏹: bow and arrow
+- 🎣: fishing pole and fish
+- 🚣: rowboat
+- 🏊: swimmer, swim mer
+- 🏄: surfer
+- 🛀: bath
+- ⛹: basketball player
+- 🏋: lifter
+- 🚴: bicyclist
+- 🚵: mountain bicyclist
+- 🏇: horse racing
+- 🕴: levitate
+- 🏆: trophy
+- 🎽: running shirt with sash
+- 🏅: medal
+- 🎖: military medal
+- 🎗: reminder ribbon
+- 🏵: rosette
+- 🎫: ticket
+- 🎟: tickets
+- 🎭: performing arts
+- 🎨: art
+- 🎪: circus tent
+- 🎤: microphone
+- 🎧: headphones
+- 🎼: musical score
+- 🎹: musical keyboard
+- 🎷: saxophone
+- 🎺: trumpet
+- 🎸: guitar
+- 🎻: violin
+- 🎬: clapper
+- 🎮: video game
+- 👾: space invader
+- 🎯: dart
+- 🎲: game die
+- 🎰: slot machine
+- 🎳: bowling
+- 🚗: red car
+- 🚕: taxi
+- 🚙: blue car
+- 🚌: bus
+- 🚎: trolley bus
+- 🏎: race car
+- 🚓: police car
+- 🚑: ambulance
+- 🚒: fire engine
+- 🚐: mini bus
+- 🚚: truck
+- 🚛: articulated lorry
+- 🚜: tractor
+- 🏍: motorcycle
+- 🚲: bike
+- 🚨: rotating light
+- 🚔: oncoming police car
+- 🚍: oncoming bus
+- 🚘: oncoming automobile
+- 🚖: oncoming taxi
+- 🚡: aerial tramway
+- 🚠: mountain cable way
+- 🚟: suspension railway
+- 🚃: railway car
+- 🚋: train
+- 🚝: monorail
+- 🚄: bullet train side
+- 🚅: bullet train front
+- 🚈: light rail
+- 🚞: mountain railway
+- 🚂: steam locomotive
+- 🚆: train 2
+- 🚇: metro
+- 🚊: tram
+- 🚉: station
+- 🚁: helicopter
+- 🛩: airplane small
+- ✈: airplane
+- 🛫: airplane departure
+- 🛬: airplane arriving
+- ⛵: sailboat
+- 🛥: motor boat
+- 🚤: speedboat
+- ⛴: ferry
+- 🛳: cruise ship
+- 🚀: rocket
+- 🛰: satellite orbital
+- 💺: seat
+- ⚓: anchor
+- 🚧: construction
+- ⛽: fuel pump
+- 🚏: bus stop
+- 🚦: vertical traffic light
+- 🚥: traffic light
+- 🏁: checkered flag
+- 🚢: ship
+- 🎡: ferris wheel
+- 🎢: roller coaster
+- 🎠: carousel horse
+- 🏗: construction site
+- 🌁: foggy
+- 🗼: tokyo tower
+- 🏭: factory
+- ⛲: fountain
+- 🎑: rice scene
+- ⛰: mountain
+- 🏔: mountain snow
+- 🗻: mount fuji
+- 🌋: volcano
+- 🗾: japan
+- 🏕: camping
+- ⛺: tent
+- 🏞: park
+- 🛣: motorway
+- 🛤: railway track
+- 🌅: sunrise
+- 🌄: sunrise over mountains
+- 🏜: desert
+- 🏖: beach
+- 🏝: island
+- 🌇: city sunset
+- 🌆: city dusk
+- 🏙: cityscape
+- 🌃: night with stars
+- 🌉: bridge at night
+- 🌌: milky way
+- 🌠: stars
+- 🎇: sparkler
+- 🎆: fireworks
+- 🌈: rainbow
+- 🏘: homes
+- 🏰: european castle
+- 🏯: japanese castle
+- 🏟: stadium
+- 🗽: statue of liberty
+- 🏠: house
+- 🏡: house with garden
+- 🏚: house abandoned
+- 🏢: office
+- 🏬: department store
+- 🏣: post office
+- 🏤: european post office
+- 🏥: hospital
+- 🏦: bank
+- 🏨: hotel
+- 🏪: convenience store
+- 🏫: school
+- 🏩: love hotel
+- 💒: wedding
+- 🏛: classical building
+- ⛪: church
+- 🕌: mosque
+- 🕍: synagogue
+- 🕋: kaaba
+- ⛩: shinto shrine
+- ⌚: watch
+- 📱: iphone
+- 📲: calling
+- 💻: computer
+- ⌨: keyboard
+- 🖥: desktop
+- 🖨: printer
+- 🖱: mouse three button
+- 🖲: track ball
+- 🕹: joystick
+- 🗜: compression
+- 💽: mini disc
+- 💾: floppy disk
+- 💿: cd
+- 📀: dvd
+- 📼: vhs
+- 📷: camera
+- 📸: camera with flash
+- 📹: video camera
+- 🎥: movie camera
+- 📽: projector
+- 🎞: film frames
+- 📞: telephone receiver
+- ☎: telephone
+- 📟: pager
+- 📠: fax
+- 📺: tv
+- 📻: radio
+- 🎙: microphone 2
+- 🎚: level slider
+- 🎛: control knobs
+- ⏱: stopwatch
+- ⏲: timer
+- ⏰: alarm clock
+- 🕰: clock
+- ⏳: hourglass flowing sand
+- ⌛: hourglass
+- 📡: satellite
+- 🔋: battery
+- 🔌: electric plug
+- 💡: bulb
+- 🔦: flashlight
+- 🕯: candle
+- 🗑: wastebasket
+- 🛢: oil
+- 💸: money with wings
+- 💵: dollar
+- 💴: yen
+- 💶: euro
+- 💷: pound
+- 💰: moneybag
+- 💳: credit card
+- 💎: gem
+- ⚖: scales
+- 🔧: wrench
+- 🔨: hammer, ham mer
+- ⚒: hammer pick, ham mer pick
+- 🛠: tools
+- ⛏: pick
+- 🔩: nut and bolt
+- ⚙: gear
+- ⛓: chains
+- 🔫: gun
+- 💣: bomb
+- 🔪: knife
+- 🗡: dagger
+- ⚔: crossed swords
+- 🛡: shield
+- 🚬: smoking
+- ☠: skull cross bones
+- ⚰: coffin
+- ⚱: urn
+- 🏺: amphora
+- 🔮: crystal ball
+- 📿: prayer beads
+- 💈: barber
+- ⚗: alembic
+- 🔭: telescope
+- 🔬: microscope
+- 🕳: hole
+- 💊: pill
+- 💉: syringe
+- 🌡: thermometer
+- 🏷: label
+- 🔖: bookmark
+- 🚽: toilet
+- 🚿: shower
+- 🛁: bathtub
+- 🔑: key
+- 🗝: key 2
+- 🛋: couch
+- 🛌: sleeping accommodation
+- 🛏: bed
+- 🚪: door
+- 🛎: bellhop
+- 🖼: frame photo
+- 🗺: map
+- ⛱: beach umbrella
+- 🗿: moyai
+- 🛍: shopping bags
+- 🎈: balloon
+- 🎏: flags
+- 🎀: ribbon
+- 🎁: gift
+- 🎊: confetti ball
+- 🎉: ta-da
+- 🎎: dolls
+- 🎐: wind chime
+- 🎌: crossed flags
+- 🏮: izakaya lantern
+- ✉: envelope
+- 📩: envelope with arrow
+- 📨: incoming envelope
+- 📧: email
+- 💌: love letter
+- 📮: postbox
+- 📪: mailbox closed
+- 📫: mailbox
+- 📬: mailbox with mail
+- 📭: mailbox with no mail
+- 📦: package
+- 📯: postal horn
+- 📥: inbox tray
+- 📤: outbox tray
+- 📜: scroll
+- 📃: page with curl
+- 📑: bookmark tabs
+- 📊: bar chart
+- 📈: chart with upwards trend
+- 📉: chart with downwards trend
+- 📄: page facing up
+- 📅: date
+- 📆: calendar
+- 🗓: calendar spiral
+- 📇: card index
+- 🗃: card box
+- 🗳: ballot box
+- 🗄: file cabinet
+- 📋: clipboard
+- 🗒: notepad spiral
+- 📁: file folder
+- 📂: open file folder
+- 🗂: dividers
+- 🗞: newspaper 2
+- 📰: newspaper
+- 📓: notebook
+- 📕: closed book
+- 📗: green book
+- 📘: blue book
+- 📙: orange book
+- 📔: notebook with decorative cover
+- 📒: ledger
+- 📚: books
+- 📖: book
+- 🔗: link
+- 📎: paper clip
+- 🖇: paper clips
+- ✂: scissors
+- 📐: triangular ruler
+- 📏: straight ruler
+- 📌: push pin
+- 📍: round push pin
+- 🚩: triangular flag on post
+- 🏳: flag white
+- 🏴: flag black, flag b lack
+- 🔐: closed lock with key
+- 🔒: lock
+- 🔓: unlock
+- 🔏: lock with ink pen
+- 🖊: pen ballpoint
+- 🖋: pen fountain
+- ✒: black nib
+- 📝: pencil
+- ✏: pencil 2
+- 🖍: crayon
+- 🖌: paintbrush
+- 🔍: mag
+- 🔎: mag right
+- ❤: heart
+- 💛: yellow heart
+- 💚: green heart
+- 💙: blue heart
+- 💜: purple heart
+- 💔: broken heart
+- ❣: heart exclamation, heart !
+- 💕: two hearts
+- 💞: revolving hearts
+- 💓: heartbeat
+- 💗: heart pulse
+- 💖: sparkling heart
+- 💘: cupid
+- 💝: gift heart
+- 💟: heart decoration
+- ☮: peace
+- ✝: cross
+- ☪: star and crescent
+- 🕉: om symbol
+- ☸: wheel of dharma
+- ✡: star of david
+- 🔯: six pointed star
+- 🕎: menorah
+- ☯: yin yang
+- ☦: orthodox cross
+- 🛐: place of worship
+- ⛎: ophiuchus
+- ♈: aries
+- ♉: taurus
+- ♊: gemini
+- ♋: cancer
+- ♌: leo
+- ♍: virgo
+- ♎: libra
+- ♏: scorpius
+- ♐: sagittarius
+- ♑: capricorn
+- ♒: aquarius
+- ♓: pisces
+- 🆔: id
+- ⚛: atom
+- ☢: radioactive
+- ☣: bio hazard
+- 📴: mobile phone off
+- 📳: vibration mode
+- ✴: eight pointed black star
+- 🆚: versus
+- 🉑: accept
+- 💮: white flower
+- 🉐: ideograph advantage
+- ㊙: secret
+- ㊗: congratulations
+- 🅰: a
+- 🅱: b
+- 🆎: ab
+- 🆑: cl
+- 🅾: o 2
+- 🆘: sos
+- ⛔: no entry
+- 📛: name badge
+- 🚫: no entry sign
+- ❌: x
+- ⭕: o
+- 💢: anger
+- ♨: hot springs
+- 🚷: no pedestrians
+- 🚯: do not litter
+- 🚳: no bicycles
+- 🚱: non-potable water
+- 🔞: underage
+- 📵: no mobile phones
+- ❗: exclamation, !
+- ❕: grey exclamation, gray exclamation, gray !, grey !
+- ❓: question, ?
+- ❔: grey question, gray question, gray ?, grey ?
+- ‼: bang bang, ! !
+- ⁉: interrobang, exclamation question, ! question, ! ?, exclamation ?
+- 🔅: low brightness
+- 🔆: high brightness
+- 🔱: trident
+- ⚜: fleur-de-lis
+- 〽: part alternation mark
+- ⚠: warning
+- 🚸: children crossing
+- 🔰: beginner
+- ♻: recycle
+- 💹: chart
+- ❇: sparkle
+- ✳: eight spoked asterisk
+- ❎: negative squared cross mark
+- ✅: white check mark
+- 💠: diamond shape with a dot inside
+- 🌀: cyclone
+- ➿: loop
+- 🌐: globe with meridians
+- Ⓜ: m
+- 🏧: atm
+- 🈂: sa
+- 🛂: passport control
+- 🛃: customs
+- 🛄: baggage claim
+- 🛅: left luggage
+- ♿: wheelchair
+- 🚭: no smoking
+- 🚾: wc
+- 🅿: parking
+- 🚰: potable water
+- 🚹: mens
+- 🚺: womens
+- 🚼: baby symbol
+- 🚻: restroom
+- 🚮: put litter in its place
+- 🎦: cinema
+- 📶: signal strength
+- 🈁: koko
+- 🆖: ng
+- 🆗: okay
+- 🆙: up
+- 🆒: cool
+- 🆕: new
+- 🆓: free
+- 0⃣: zero
+- 1⃣: one
+- 2⃣: two
+- 3⃣: three
+- 4⃣: four
+- 5⃣: five
+- 6⃣: six
+- 7⃣: seven
+- 8⃣: eight
+- 9⃣: nine
+- 🔟: ten
+- ▶: arrow forward
+- ⏸: pause button
+- ⏯: play pause
+- ⏹: stop button
+- ⏺: record button
+- ⏭: track next
+- ⏮: track previous
+- ⏩: fast forward
+- ⏪: rewind
+- 🔀: twisted rightwards arrows
+- 🔁: repeat
+- 🔂: repeat one
+- ◀: arrow backward
+- 🔼: arrow up small
+- 🔽: arrow down small
+- ⏫: arrow double up
+- ⏬: arrow double down
+- ➡: arrow right
+- ⬅: arrow left
+- ⬆: arrow up
+- ⬇: arrow down
+- ↗: arrow upper right
+- ↘: arrow lower right
+- ↙: arrow lower left
+- ↖: arrow upper left
+- ↕: arrow up down
+- ↔: left right arrow
+- 🔄: arrows counter clockwise
+- ↪: arrow right hook
+- ↩: leftwards arrow with hook
+- ⤴: arrow heading up
+- ⤵: arrow heading down
+- #⃣: hash
+- *⃣: asterisk
+- ℹ: information source
+- 🔤: abc
+- 🔡: abcd
+- 🔠: capital abcd
+- 🔣: symbols
+- 🎵: musical note
+- 🎶: notes
+- 〰: wavy dash
+- ➰: curly loop
+- ✔: heavy check mark
+- 🔃: arrows clockwise
+- ➕: heavy plus sign, +
+- ➖: heavy minus sign, -
+- ➗: heavy division sign, ÷
+- ✖: heavy multiplication x, times
+- 💲: heavy dollar sign, $
+- 💱: currency exchange
+- ©: copyright
+- ®: registered
+- ™: tm
+- 🔚: end
+- 🔙: back
+- 🔛: on
+- 🔝: top
+- 🔜: soon
+- ☑: ballot box with check
+- 🔘: radio button
+- ⚪: white circle
+- ⚫: black circle
+- 🔴: red circle
+- 🔵: large blue circle
+- 🔸: small orange diamond
+- 🔹: small blue diamond
+- 🔶: large orange diamond
+- 🔷: large blue diamond
+- 🔺: small red triangle
+- ▪: black small square
+- ▫: white small square
+- ⬛: black large square
+- ⬜: white large square
+- 🔻: small red triangle down
+- ◼: black medium square
+- ◻: white medium square
+- ◾: black medium small square
+- ◽: white medium small square
+- 🔲: black square button
+- 🔳: white square button
+- 🔈: speaker
+- 🔉: sound
+- 🔊: loud sound
+- 🔇: mute
+- 📣: mega
+- 📢: loudspeaker
+- 🔔: bell
+- 🔕: no bell
+- 🃏: black joker
+- 🀄: mahjong
+- ♠: spades
+- ♣: clubs
+- ♥: hearts
+- ♦: diamonds
+- 🎴: flower playing cards
+- 💭: thought balloon
+- 🗯: anger right
+- 💬: speech balloon
+- 🕐: clock 1
+- 🕑: clock 2
+- 🕒: clock 3
+- 🕓: clock 4
+- 🕔: clock 5
+- 🕕: clock 6
+- 🕖: clock 7
+- 🕗: clock 8
+- 🕘: clock 9
+- 🕙: clock10
+- 🕚: clock11
+- 🕛: clock12
+- 🕜: clock130
+- 🕝: clock230
+- 🕞: clock330
+- 🕟: clock430
+- 🕠: clock530
+- 🕡: clock630
+- 🕢: clock730
+- 🕣: clock830
+- 🕤: clock930
+- 🕥: clock1030
+- 🕦: clock1130
+- 🕧: clock1230
+- 👁🗨: eye in speech bubble
+- 🇦🇨: flag a c
+- 🇦🇫: flag a f
+- 🇦🇱: flag al, flag a l
+- 🇩🇿: flag d z
+- 🇦🇩: flag ad, flag a d
+- 🇦🇴: flag a o
+- 🇦🇮: flag a i
+- 🇦🇬: flag a g
+- 🇦🇷: flag ar, flag a r
+- 🇦🇲: flag am, flag a m
+- 🇦🇼: flag aw, flag a w
+- 🇦🇺: flag a u
+- 🇦🇹: flag at, flag a t
+- 🇦🇿: flag a z
+- 🇧🇸: flag b s
+- 🇧🇭: flag b h
+- 🇧🇩: flag b d
+- 🇧🇧: flag b b
+- 🇧🇾: flag by, flag b y
+- 🇧🇪: flag be, flag b e
+- 🇧🇿: flag b z
+- 🇧🇯: flag b j
+- 🇧🇲: flag b m
+- 🇧🇹: flag b t
+- 🇧🇴: flag bo, flag b o
+- 🇧🇦: flag ba, flag b a
+- 🇧🇼: flag b w
+- 🇧🇷: flag b r
+- 🇧🇳: flag b n
+- 🇧🇬: flag b g
+- 🇧🇫: flag b f
+- 🇧🇮: flag b i
+- 🇨🇻: flag c v
+- 🇰🇭: flag k h
+- 🇨🇲: flag c m
+- 🇨🇦: flag canada, flag c a
+- 🇰🇾: flag k y
+- 🇨🇫: flag c f
+- 🇹🇩: flag t d
+- 🇨🇱: flag cl, flag c l
+- 🇨🇳: flag china, flag c n
+- 🇨🇴: flag co, flag c o
+- 🇰🇲: flag k m
+- 🇨🇬: flag c g
+- 🇨🇩: flag cd, flag c d
+- 🇨🇷: flag c r
+- 🇭🇷: flag h r
+- 🇨🇺: flag c u
+- 🇨🇾: flag cy, flag c y
+- 🇨🇿: flag c z
+- 🇩🇰: flag d k
+- 🇩🇯: flag d j
+- 🇩🇲: flag d m
+- 🇩🇴: flag do, flag d o
+- 🇪🇨: flag e c
+- 🇪🇬: flag e g
+- 🇸🇻: flag s v
+- 🇬🇶: flag g q
+- 🇪🇷: flag e r
+- 🇪🇪: flag e e
+- 🇪🇹: flag e t
+- 🇫🇰: flag f k
+- 🇫🇴: flag f o
+- 🇫🇯: flag f j
+- 🇫🇮: flag f i
+- 🇫🇷: flag france, flag f r
+- 🇵🇫: flag p f
+- 🇬🇦: flag g a
+- 🇬🇲: flag gm, flag g m
+- 🇬🇪: flag g e
+- 🇩🇪: flag denmark, flag d e
+- 🇬🇭: flag g h
+- 🇬🇮: flag gi, flag g i
+- 🇬🇷: flag g r
+- 🇬🇱: flag g l
+- 🇬🇩: flag g d
+- 🇬🇺: flag g u
+- 🇬🇹: flag g t
+- 🇬🇳: flag g n
+- 🇬🇼: flag g w
+- 🇬🇾: flag g y
+- 🇭🇹: flag h t
+- 🇭🇳: flag h n
+- 🇭🇰: flag h k
+- 🇭🇺: flag h u
+- 🇮🇸: flag is, flag i s
+- 🇮🇳: flag in, flag i n
+- 🇮🇩: flag id, flag i d
+- 🇮🇷: flag i r
+- 🇮🇶: flag i q
+- 🇮🇪: flag i e
+- 🇮🇱: flag i l
+- 🇮🇹: flag italy, flag i t
+- 🇨🇮: flag c i
+- 🇯🇲: flag j m
+- 🇯🇵: flag japan, flag j p
+- 🇯🇪: flag j e
+- 🇯🇴: flag j o
+- 🇰🇿: flag k z
+- 🇰🇪: flag k e
+- 🇰🇮: flag ki, flag k i
+- 🇽🇰: flag x k
+- 🇰🇼: flag k w
+- 🇰🇬: flag k g
+- 🇱🇦: flag la, flag l a
+- 🇱🇻: flag l v
+- 🇱🇧: flag l b
+- 🇱🇸: flag l s
+- 🇱🇷: flag l r
+- 🇱🇾: flag l y
+- 🇱🇮: flag l i
+- 🇱🇹: flag l t
+- 🇱🇺: flag l u
+- 🇲🇴: flag mo, flag m o
+- 🇲🇰: flag m k
+- 🇲🇬: flag m g
+- 🇲🇼: flag m w
+- 🇲🇾: flag my, flag m y
+- 🇲🇻: flag m v
+- 🇲🇱: flag m l
+- 🇲🇹: flag m t
+- 🇲🇭: flag m h
+- 🇲🇷: flag m r
+- 🇲🇺: flag mu, flag m u
+- 🇲🇽: flag m x
+- 🇫🇲: flag f m
+- 🇲🇩: flag m d
+- 🇲🇨: flag m c
+- 🇲🇳: flag m n
+- 🇲🇪: flag me, flag m e
+- 🇲🇸: flag ms, flag m s
+- 🇲🇦: flag ma, flag m a
+- 🇲🇿: flag m z
+- 🇲🇲: flag mm, flag m m
+- 🇳🇦: flag n a
+- 🇳🇷: flag n r
+- 🇳🇵: flag n p
+- 🇳🇱: flag n l
+- 🇳🇨: flag n c
+- 🇳🇿: flag n z
+- 🇳🇮: flag n i
+- 🇳🇪: flag n e
+- 🇳🇬: flag ng, flag n g
+- 🇳🇺: flag nu, flag n u
+- 🇰🇵: flag k p
+- 🇳🇴: flag no, flag n o
+- 🇴🇲: flag om, flag o m
+- 🇵🇰: flag p k
+- 🇵🇼: flag p w
+- 🇵🇸: flag p s
+- 🇵🇦: flag pa, flag p a
+- 🇵🇬: flag p g
+- 🇵🇾: flag p y
+- 🇵🇪: flag p e
+- 🇵🇭: flag ph, flag p h
+- 🇵🇱: flag p l
+- 🇵🇹: flag p t
+- 🇵🇷: flag p r
+- 🇶🇦: flag q a
+- 🇷🇴: flag ro, flag r o
+- 🇷🇺: flag russia, flag r u
+- 🇷🇼: flag r w
+- 🇸🇭: flag s h
+- 🇰🇳: flag k n
+- 🇱🇨: flag l c
+- 🇻🇨: flag vc, flag v c
+- 🇼🇸: flag w s
+- 🇸🇲: flag s m
+- 🇸🇹: flag s t
+- 🇸🇦: flag sa, flag s a
+- 🇸🇳: flag s n
+- 🇷🇸: flag r s
+- 🇸🇨: flag s c
+- 🇸🇱: flag s l
+- 🇸🇬: flag s g
+- 🇸🇰: flag s k
+- 🇸🇮: flag si, flag s i
+- 🇸🇧: flag s b
+- 🇸🇴: flag so, flag s o
+- 🇿🇦: flag za, flag z a
+- 🇰🇷: flag korean, flag k r
+- 🇪🇸: flag spain, flag e s
+- 🇱🇰: flag l k
+- 🇸🇩: flag s d
+- 🇸🇷: flag s r
+- 🇸🇿: flag s z
+- 🇸🇪: flag s e
+- 🇨🇭: flag c h
+- 🇸🇾: flag s y
+- 🇹🇼: flag t w
+- 🇹🇯: flag t j
+- 🇹🇿: flag t z
+- 🇹🇭: flag t h
+- 🇹🇱: flag t l
+- 🇹🇬: flag t g
+- 🇹🇴: flag to, flag t o
+- 🇹🇹: flag t t
+- 🇹🇳: flag t n
+- 🇹🇷: flag t r
+- 🇹🇲: flag tm, flag t m
+- 🇹🇻: flag tv, flag t v
+- 🇺🇬: flag u g
+- 🇺🇦: flag u a
+- 🇦🇪: flag a e
+- 🇬🇧: flag g b
+- 🇺🇸: flag united states, flag u s
+- 🇻🇮: flag vi, flag v i
+- 🇺🇾: flag u y
+- 🇺🇿: flag u z
+- 🇻🇺: flag v u
+- 🇻🇦: flag v a
+- 🇻🇪: flag v e
+- 🇻🇳: flag v n
+- 🇼🇫: flag w f
+- 🇪🇭: flag eh, flag e h
+- 🇾🇪: flag y e
+- 🇿🇲: flag z m
+- 🇿🇼: flag z w
+- 🇷🇪: flag r e
+- 🇦🇽: flag a x
+- 🇹🇦: flag t a
+- 🇮🇴: flag i o
+- 🇧🇶: flag b q
+- 🇨🇽: flag c x
+- 🇨🇨: flag cc, flag c c
+- 🇬🇬: flag gg, flag g g
+- 🇮🇲: flag i m
+- 🇾🇹: flag y t
+- 🇳🇫: flag n f
+- 🇵🇳: flag p n
+- 🇧🇱: flag b l
+- 🇵🇲: flag p m
+- 🇬🇸: flag g s
+- 🇹🇰: flag t k
+- 🇧🇻: flag b v
+- 🇭🇲: flag hm, flag h m
+- 🇸🇯: flag s j
+- 🇺🇲: flag um, flag u m
+- 🇮🇨: flag i c
+- 🇪🇦: flag e a
+- 🇨🇵: flag c p
+- 🇩🇬: flag d g
+- 🇦🇸: flag as, flag a s
+- 🇦🇶: flag a q
+- 🇻🇬: flag v g
+- 🇨🇰: flag c k
+- 🇨🇼: flag c w
+- 🇪🇺: flag e u
+- 🇬🇫: flag g f
+- 🇹🇫: flag t f
+- 🇬🇵: flag g p
+- 🇲🇶: flag m q
+- 🇲🇵: flag m p
+- 🇸🇽: flag s x
+- 🇸🇸: flag s s
+- 🇹🇨: flag t c
+- 🇲🇫: flag m f
+- 🙌🏻: raised hands tone 1
+- 🙌🏼: raised hands tone 2
+- 🙌🏽: raised hands tone 3
+- 🙌🏾: raised hands tone 4
+- 🙌🏿: raised hands tone 5
+- 👏🏻: clap tone 1
+- 👏🏼: clap tone 2
+- 👏🏽: clap tone 3
+- 👏🏾: clap tone 4
+- 👏🏿: clap tone 5
+- 👋🏻: wave tone 1
+- 👋🏼: wave tone 2
+- 👋🏽: wave tone 3
+- 👋🏾: wave tone 4
+- 👋🏿: wave tone 5
+- 👍🏻: thumbs up tone 1
+- 👍🏼: thumbs up tone 2
+- 👍🏽: thumbs up tone 3
+- 👍🏾: thumbs up tone 4
+- 👍🏿: thumbs up tone 5
+- 👎🏻: thumbs down tone 1
+- 👎🏼: thumbs down tone 2
+- 👎🏽: thumbs down tone 3
+- 👎🏾: thumbs down tone 4
+- 👎🏿: thumbs down tone 5
+- 👊🏻: punch tone 1
+- 👊🏼: punch tone 2
+- 👊🏽: punch tone 3
+- 👊🏾: punch tone 4
+- 👊🏿: punch tone 5
+- ✊🏻: fist tone 1
+- ✊🏼: fist tone 2
+- ✊🏽: fist tone 3
+- ✊🏾: fist tone 4
+- ✊🏿: fist tone 5
+- ✌🏻: v tone 1
+- ✌🏼: v tone 2
+- ✌🏽: v tone 3
+- ✌🏾: v tone 4
+- ✌🏿: v tone 5
+- 👌🏻: okay hand tone 1
+- 👌🏼: okay hand tone 2
+- 👌🏽: okay hand tone 3
+- 👌🏾: okay hand tone 4
+- 👌🏿: okay hand tone 5
+- ✋🏻: raised hand tone 1
+- ✋🏼: raised hand tone 2
+- ✋🏽: raised hand tone 3
+- ✋🏾: raised hand tone 4
+- ✋🏿: raised hand tone 5
+- 👐🏻: open hands tone 1
+- 👐🏼: open hands tone 2
+- 👐🏽: open hands tone 3
+- 👐🏾: open hands tone 4
+- 👐🏿: open hands tone 5
+- 💪🏻: muscle tone 1
+- 💪🏼: muscle tone 2
+- 💪🏽: muscle tone 3
+- 💪🏾: muscle tone 4
+- 💪🏿: muscle tone 5
+- 🙏🏻: pray tone 1
+- 🙏🏼: pray tone 2
+- 🙏🏽: pray tone 3
+- 🙏🏾: pray tone 4
+- 🙏🏿: pray tone 5
+- ☝🏻: point up tone 1
+- ☝🏼: point up tone 2
+- ☝🏽: point up tone 3
+- ☝🏾: point up tone 4
+- ☝🏿: point up tone 5
+- 👆🏻: point up 2 tone 1
+- 👆🏼: point up 2 tone 2
+- 👆🏽: point up 2 tone 3
+- 👆🏾: point up 2 tone 4
+- 👆🏿: point up 2 tone 5
+- 👇🏻: point down tone 1
+- 👇🏼: point down tone 2
+- 👇🏽: point down tone 3
+- 👇🏾: point down tone 4
+- 👇🏿: point down tone 5
+- 👈🏻: point left tone 1
+- 👈🏼: point left tone 2
+- 👈🏽: point left tone 3
+- 👈🏾: point left tone 4
+- 👈🏿: point left tone 5
+- 👉🏻: point right tone 1
+- 👉🏼: point right tone 2
+- 👉🏽: point right tone 3
+- 👉🏾: point right tone 4
+- 👉🏿: point right tone 5
+- 🖕🏻: middle finger tone 1
+- 🖕🏼: middle finger tone 2
+- 🖕🏽: middle finger tone 3
+- 🖕🏾: middle finger tone 4
+- 🖕🏿: middle finger tone 5
+- 🖐🏻: hand splayed tone 1
+- 🖐🏼: hand splayed tone 2
+- 🖐🏽: hand splayed tone 3
+- 🖐🏾: hand splayed tone 4
+- 🖐🏿: hand splayed tone 5
+- 🤘🏻: metal tone 1
+- 🤘🏼: metal tone 2
+- 🤘🏽: metal tone 3
+- 🤘🏾: metal tone 4
+- 🤘🏿: metal tone 5
+- 🖖🏻: vulcan tone 1, spock tone 1
+- 🖖🏼: vulcan tone 2, spock tone 2
+- 🖖🏽: vulcan tone 3, spock tone 3
+- 🖖🏾: vulcan tone 4, spock tone 4
+- 🖖🏿: vulcan tone 5, spock tone 5
+- ✍🏻: writing hand tone 1
+- ✍🏼: writing hand tone 2
+- ✍🏽: writing hand tone 3
+- ✍🏾: writing hand tone 4
+- ✍🏿: writing hand tone 5
+- 💅🏻: nail care tone 1
+- 💅🏼: nail care tone 2
+- 💅🏽: nail care tone 3
+- 💅🏾: nail care tone 4
+- 💅🏿: nail care tone 5
+- 👂🏻: ear tone 1
+- 👂🏼: ear tone 2
+- 👂🏽: ear tone 3
+- 👂🏾: ear tone 4
+- 👂🏿: ear tone 5
+- 👃🏻: nose tone 1
+- 👃🏼: nose tone 2
+- 👃🏽: nose tone 3
+- 👃🏾: nose tone 4
+- 👃🏿: nose tone 5
+- 👶🏻: baby tone 1
+- 👶🏼: baby tone 2
+- 👶🏽: baby tone 3
+- 👶🏾: baby tone 4
+- 👶🏿: baby tone 5
+- 👦🏻: boy tone 1
+- 👦🏼: boy tone 2
+- 👦🏽: boy tone 3
+- 👦🏾: boy tone 4
+- 👦🏿: boy tone 5
+- 👧🏻: girl tone 1
+- 👧🏼: girl tone 2
+- 👧🏽: girl tone 3
+- 👧🏾: girl tone 4
+- 👧🏿: girl tone 5
+- 👨🏻: man tone 1
+- 👨🏼: man tone 2
+- 👨🏽: man tone 3
+- 👨🏾: man tone 4
+- 👨🏿: man tone 5
+- 👩🏻: woman tone 1
+- 👩🏼: woman tone 2
+- 👩🏽: woman tone 3
+- 👩🏾: woman tone 4
+- 👩🏿: woman tone 5
+- 👱🏻: person with blond hair tone 1
+- 👱🏼: person with blond hair tone 2
+- 👱🏽: person with blond hair tone 3
+- 👱🏾: person with blond hair tone 4
+- 👱🏿: person with blond hair tone 5
+- 👴🏻: older man tone 1
+- 👴🏼: older man tone 2
+- 👴🏽: older man tone 3
+- 👴🏾: older man tone 4
+- 👴🏿: older man tone 5
+- 👵🏻: older woman tone 1
+- 👵🏼: older woman tone 2
+- 👵🏽: older woman tone 3
+- 👵🏾: older woman tone 4
+- 👵🏿: older woman tone 5
+- 👲🏻: man with gua pi mao tone 1
+- 👲🏼: man with gua pi mao tone 2
+- 👲🏽: man with gua pi mao tone 3
+- 👲🏾: man with gua pi mao tone 4
+- 👲🏿: man with gua pi mao tone 5
+- 👳🏻: man with turban tone 1
+- 👳🏼: man with turban tone 2
+- 👳🏽: man with turban tone 3
+- 👳🏾: man with turban tone 4
+- 👳🏿: man with turban tone 5
+- 👮🏻: cop tone 1
+- 👮🏼: cop tone 2
+- 👮🏽: cop tone 3
+- 👮🏾: cop tone 4
+- 👮🏿: cop tone 5
+- 👷🏻: construction worker tone 1
+- 👷🏼: construction worker tone 2
+- 👷🏽: construction worker tone 3
+- 👷🏾: construction worker tone 4
+- 👷🏿: construction worker tone 5
+- 💂🏻: guardsman tone 1
+- 💂🏼: guardsman tone 2
+- 💂🏽: guardsman tone 3
+- 💂🏾: guardsman tone 4
+- 💂🏿: guardsman tone 5
+- 🎅🏻: santa tone 1
+- 🎅🏼: santa tone 2
+- 🎅🏽: santa tone 3
+- 🎅🏾: santa tone 4
+- 🎅🏿: santa tone 5
+- 👼🏻: angel tone 1
+- 👼🏼: angel tone 2
+- 👼🏽: angel tone 3
+- 👼🏾: angel tone 4
+- 👼🏿: angel tone 5
+- 👸🏻: princess tone 1
+- 👸🏼: princess tone 2
+- 👸🏽: princess tone 3
+- 👸🏾: princess tone 4
+- 👸🏿: princess tone 5
+- 👰🏻: bride with veil tone 1
+- 👰🏼: bride with veil tone 2
+- 👰🏽: bride with veil tone 3
+- 👰🏾: bride with veil tone 4
+- 👰🏿: bride with veil tone 5
+- 🚶🏻: walking tone 1
+- 🚶🏼: walking tone 2
+- 🚶🏽: walking tone 3
+- 🚶🏾: walking tone 4
+- 🚶🏿: walking tone 5
+- 🏃🏻: runner tone 1
+- 🏃🏼: runner tone 2
+- 🏃🏽: runner tone 3
+- 🏃🏾: runner tone 4
+- 🏃🏿: runner tone 5
+- 💃🏻: dancer tone 1
+- 💃🏼: dancer tone 2
+- 💃🏽: dancer tone 3
+- 💃🏾: dancer tone 4
+- 💃🏿: dancer tone 5
+- 🙇🏻: bow tone 1
+- 🙇🏼: bow tone 2
+- 🙇🏽: bow tone 3
+- 🙇🏾: bow tone 4
+- 🙇🏿: bow tone 5
+- 💁🏻: information desk person tone 1
+- 💁🏼: information desk person tone 2
+- 💁🏽: information desk person tone 3
+- 💁🏾: information desk person tone 4
+- 💁🏿: information desk person tone 5
+- 🙅🏻: no good tone 1
+- 🙅🏼: no good tone 2
+- 🙅🏽: no good tone 3
+- 🙅🏾: no good tone 4
+- 🙅🏿: no good tone 5
+- 🙆🏻: okay woman tone 1
+- 🙆🏼: okay woman tone 2
+- 🙆🏽: okay woman tone 3
+- 🙆🏾: okay woman tone 4
+- 🙆🏿: okay woman tone 5
+- 🙋🏻: raising hand tone 1
+- 🙋🏼: raising hand tone 2
+- 🙋🏽: raising hand tone 3
+- 🙋🏾: raising hand tone 4
+- 🙋🏿: raising hand tone 5
+- 🙎🏻: person with pouting face tone 1
+- 🙎🏼: person with pouting face tone 2
+- 🙎🏽: person with pouting face tone 3
+- 🙎🏾: person with pouting face tone 4
+- 🙎🏿: person with pouting face tone 5
+- 🙍🏻: person frowning tone 1
+- 🙍🏼: person frowning tone 2
+- 🙍🏽: person frowning tone 3
+- 🙍🏾: person frowning tone 4
+- 🙍🏿: person frowning tone 5
+- 💇🏻: haircut tone 1
+- 💇🏼: haircut tone 2
+- 💇🏽: haircut tone 3
+- 💇🏾: haircut tone 4
+- 💇🏿: haircut tone 5
+- 💆🏻: massage tone 1
+- 💆🏼: massage tone 2
+- 💆🏽: massage tone 3
+- 💆🏾: massage tone 4
+- 💆🏿: massage tone 5
+- 🚣🏻: rowboat tone 1
+- 🚣🏼: rowboat tone 2
+- 🚣🏽: rowboat tone 3
+- 🚣🏾: rowboat tone 4
+- 🚣🏿: rowboat tone 5
+- 🏊🏻: swimmer tone 1, swim mer tone 1
+- 🏊🏼: swimmer tone 2, swim mer tone 2
+- 🏊🏽: swimmer tone 3, swim mer tone 3
+- 🏊🏾: swimmer tone 4, swim mer tone 4
+- 🏊🏿: swimmer tone 5, swim mer tone 5
+- 🏄🏻: surfer tone 1
+- 🏄🏼: surfer tone 2
+- 🏄🏽: surfer tone 3
+- 🏄🏾: surfer tone 4
+- 🏄🏿: surfer tone 5
+- 🛀🏻: bath tone 1
+- 🛀🏼: bath tone 2
+- 🛀🏽: bath tone 3
+- 🛀🏾: bath tone 4
+- 🛀🏿: bath tone 5
+- ⛹🏻: basketball player tone 1
+- ⛹🏼: basketball player tone 2
+- ⛹🏽: basketball player tone 3
+- ⛹🏾: basketball player tone 4
+- ⛹🏿: basketball player tone 5
+- 🏋🏻: lifter tone 1
+- 🏋🏼: lifter tone 2
+- 🏋🏽: lifter tone 3
+- 🏋🏾: lifter tone 4
+- 🏋🏿: lifter tone 5
+- 🚴🏻: bicyclist tone 1
+- 🚴🏼: bicyclist tone 2
+- 🚴🏽: bicyclist tone 3
+- 🚴🏾: bicyclist tone 4
+- 🚴🏿: bicyclist tone 5
+- 🚵🏻: mountain bicyclist tone 1
+- 🚵🏼: mountain bicyclist tone 2
+- 🚵🏽: mountain bicyclist tone 3
+- 🚵🏾: mountain bicyclist tone 4
+- 🚵🏿: mountain bicyclist tone 5
+- 🏇🏻: horse racing tone 1
+- 🏇🏼: horse racing tone 2
+- 🏇🏽: horse racing tone 3
+- 🏇🏾: horse racing tone 4
+- 🏇🏿: horse racing tone 5
+- 🕵🏻: spy tone 1
+- 🕵🏼: spy tone 2
+- 🕵🏽: spy tone 3
+- 🕵🏾: spy tone 4
+- 🕵🏿: spy tone 5
+- 🏻: tone 1
+- 🏼: tone 2
+- 🏽: tone 3
+- 🏾: tone 4
+- 🏿: tone 5

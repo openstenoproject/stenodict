@@ -1,7 +1,0 @@
-{ "filename": "uk"
-, "version": 3
-, "why": "Many speak a different flavour of English than the United States. Minimise your frustration by synchronising Plover's behaviour with your own. Around 2300 entries from the default dictionary have been replaced, checking against a wordlist of over 1700 words."
-, "how":
-  [ "Just add this dictionary to Plover's list, such that it takes precedence over your core Plover dictionary (`dict.json` or `main.json`)."
-  ]
-}
