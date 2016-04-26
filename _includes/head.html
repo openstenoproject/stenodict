@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>{% if page.title %}{{ page.title | append: ' - ' | append: site.title }}{% else %}{{ site.title }}{% endif %}</title>
-  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+  <meta name="description" content="{% if page.excerpt %}{{ page.what | strip_html | strip_newlines | truncate: 160 }}{% else if page.what %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
   <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script type="text/javascript" src="https://code.jquery.com/jquery-2.2.3.min.js"></script>
@@ -12,7 +12,6 @@
   <script type="text/javascript">
     window.onload = function () {
       var aLocation = window.location.href
-        console.log(aLocation)
       // Stenodict URL should have:
       // /#/
       // Trailing ?
