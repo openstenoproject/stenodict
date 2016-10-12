@@ -38,7 +38,7 @@ Usual strokes for punctuation:
 - `KW-L`: =
 - `KW-LS`: ==
 - `KW*LS`: ===
-- `PAO*EUP`: |
+- `PAO*EUP`: \|
 - `R*UPB`: _
 - `R*UPBD`: _
 - `RUPBD`: _
