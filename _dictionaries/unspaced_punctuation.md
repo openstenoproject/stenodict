@@ -1,6 +1,6 @@
 ---
 layout: dictionary
-title: Unspaced punctuation
+title: Unspaced Punctuation
 version: 1
 date: 2016-10-12
 filename: unspaced_punctuation

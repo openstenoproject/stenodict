@@ -1,6 +1,6 @@
 ---
 layout: dictionary
-title: Di’s Vim dictionary
+title: Di’s Vim Commands
 version: 1
 date: 2016-10-12
 filename: vim_di
