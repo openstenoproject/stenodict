@@ -510,6 +510,11 @@ for stroke in adhoc_dict.keys():
 	assert not is_object_stroke(stroke), f"ad hoc stroke {stroke} can be misrecognized as object"
 enabled = True
 
+# NOTE it is very wrong to make `lookup` not a pure function
+# should use command plugin or https://github.com/user202729/plover-python-dictionary-cmd instead
+# (probably the former, more flexible)
+# (in practice it works anyway)
+
 def lookup(strokes: tuple[str, ...])->Optional[str]:
 	if not inkscape_window_focused():
 		return None
