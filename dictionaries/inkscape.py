@@ -22,6 +22,7 @@ def settings()->tuple[dict[Stroke_, str], dict[Stroke_, str], Stroke_, Stroke_, 
 			Stroke("T"  ): "{#Control(t)}",# my internal binding for TeXtext (it's slow to spawn though)
 			Stroke("SKW"): "{#Control(z)}",# undo
 			Stroke("STK"): "{#Control(y)}",# redo
+			Stroke("SH"): "{#F12}", # show/hide dialogues
 			StrokeH("KR"): copy_object,
 			StrokeH("SR"): paste_object,
 			Stroke("TPR"): "{#Escape}",
@@ -40,34 +41,79 @@ def settings()->tuple[dict[Stroke_, str], dict[Stroke_, str], Stroke_, Stroke_, 
 			Stroke("TKR"): "{#Control(Shift(R))}",  # resize page to selection/drawing
 			}
 
-	colors = {	# shape following my internal okular set-color script
-			"T"    : color_none.name,
-			"R"    : "red"	  ,
-			"PW"   : "blue"   ,
-			"KR"   : "cyan"   ,
-			"PH"   : "magenta",
-			"TKPWR": "orange" ,
-			"PWHR" : "black"  ,
-			"TKPW" : "green"  ,
-			"W"    : "white"  ,
-			"PR"   : "#cccccc",  # 20% gray
+	# ↓ used to use this but is too restrictive
+	#colors = {	# shape following my internal okular set-color script
+	#		"T"    : color_none.name,
+	#		"R"    : "red"	  ,
+	#		"PW"   : "blue"   ,
+	#		"KR"   : "cyan"   ,
+	#		"PH"   : "magenta",
+	#		"TKPWR": "orange" ,
+	#		"PWHR" : "black"  ,
+	#		"TKPW" : "green"  ,
+	#		"W"    : "white"  ,
+	#		"PR"   : "#cccccc",  # 20% gray
+	#		}
+
+	color_bases = {
+			"R"   :"red",    # Red
+			#"PWR" :"orange",# doesn't work on my side because sticky keys
+			"WR"  :"yellow", # Yellow (truncated)
+			"HR"  :"lime",   # Lime
+			"H"   :"green",
+			"PWH" :"cyan",   # (mix of blue and green)
+			"PW"  :"blue",   # BLue
+			"PWHR":"sky",
+			"PH"  :"fuchsia",# Magenta
+			"PR"  :"gray",   # gRay  (?)
+			"WHR" :"teal",
+			"W"   :"violet",
+			"PHR" :"purple", # PurpLe
+			"P"   :"pink",
+			"WH"  :"rose",
 			}
+
+	colors = dict_merge(
+			{
+				"T"    : color_none.name,
+				"TK"   : "white",
+				"K"    : "black",
+				},
+			{Stroke(stroke_base) | "K": tailwind_colors[color_base][2] for stroke_base, color_base in color_bases.items()},
+			{stroke_base              : tailwind_colors[color_base][5] for stroke_base, color_base in color_bases.items()},
+			{Stroke(stroke_base) | "T": tailwind_colors[color_base][7] for stroke_base, color_base in color_bases.items()},
+			)
 
 	# hold with A to apply color on stroke (or with A# to fill)
 	# the left * button on my keyboard is # so…
 	styles: dict[Stroke_, str] = dict_merge(
 			{
-				Stroke(stroke): create_style_str(stroke=Color(color))
+				Stroke(str(stroke)): create_style_str(stroke=Color(color))
 				for stroke, color in colors.items()},
 			{
-				StrokeH(stroke): create_style_str(fill_or_arrow=Color(color))
+				StrokeH(str(stroke)): create_style_str(fill_or_arrow=Color(color))
 				for stroke, color in colors.items()},
 			{
-				Stroke("WR") : create_style_str(fill_or_arrow=Arrow()),
-				Stroke("KWR"): create_style_str(fill_or_arrow=DoubleArrow()),
+				# non-color style:
+				# S: always pressed
+				# thickness:
+				#     T P -
+				#   S - - -
+				# transparency:
+				#     - - -
+				#   S K W -
+				# arrow:
+				#     T P -
+				#   S K W -
+				# (to cancel arrow press #TA = no fill)
+				# line style (solid/dashed/dotted):
+				#     - - H
+				#   S - - R
+				Stroke("STK") : create_style_str(fill_or_arrow=Arrow()),
+				Stroke("STKPW"): create_style_str(fill_or_arrow=DoubleArrow()),
 				Stroke("SHR"): create_style_str(stroke_style=StrokeStyle.solid),
-				Stroke("STK"): create_style_str(stroke_style=StrokeStyle.dashed),
-				Stroke("TK") : create_style_str(stroke_style=StrokeStyle.dotted),
+				Stroke("SR"): create_style_str(stroke_style=StrokeStyle.dashed),
+				Stroke("SH") : create_style_str(stroke_style=StrokeStyle.dotted),
 				Stroke("S")  : create_style_str(thickness=Thickness.thin),
 				Stroke("ST") : create_style_str(thickness=Thickness.normal),
 				Stroke("STP"): create_style_str(thickness=Thickness.thick),
@@ -130,6 +176,33 @@ copy_object = "{#Control(c)}"
 paste_object = "{#Control(v)}"
 paste_style = "{#Shift(Control(v))}"
 no_op = "{#}"
+
+# level: 50 100 200 300 400 500 600 700 800 900 950
+# index: 0  1   2   3   4   5   6   7   8   9   10
+tailwind_colors = {  # https://gist.github.com/user202729/f51f92bb5135eaafccd2ac2533b18caf
+"red":     "#fef2f2 #ffe2e2 #ffc9c9 #ffa2a2 #ff6467 #fb2c36 #e7000b #c10007 #9f0712 #82181a #460809".split(), 
+"orange":  "#fff7ed #ffedd4 #ffd6a7 #ffb86a #ff8904 #ff6900 #f54900 #ca3500 #9f2d00 #7e2a0c #441306".split(), 
+"amber":   "#fffbeb #fef3c6 #fee685 #ffd230 #ffb900 #fe9a00 #e17100 #bb4d00 #973c00 #7b3306 #461901".split(), 
+"yellow":  "#fefce8 #fef9c2 #fff085 #ffdf20 #fdc700 #f0b100 #d08700 #a65f00 #894b00 #733e0a #432004".split(), 
+"lime":    "#f7fee7 #ecfcca #d8f999 #bbf451 #9ae600 #7ccf00 #5ea500 #497d00 #3c6300 #35530e #192e03".split(), 
+"green":   "#f0fdf4 #dcfce7 #b9f8cf #7bf1a8 #05df72 #00c950 #00a63e #008236 #016630 #0d542b #032e15".split(), 
+"emerald": "#ecfdf5 #d0fae5 #a4f4cf #5ee9b5 #00d492 #00bc7d #009966 #007a55 #006045 #004f3b #002c22".split(), 
+"teal":    "#f0fdfa #cbfbf1 #96f7e4 #46ecd5 #00d5be #00bba7 #009689 #00786f #005f5a #0b4f4a #022f2e".split(), 
+"cyan":    "#ecfeff #cefafe #a2f4fd #53eafd #00d3f2 #00b8db #0092b8 #007595 #005f78 #104e64 #053345".split(), 
+"sky":     "#f0f9ff #dff2fe #b8e6fe #74d4ff #00bcff #00a6f4 #0084d1 #0069a8 #00598a #024a70 #052f4a".split(), 
+"blue":    "#eff6ff #dbeafe #bedbff #8ec5ff #51a2ff #2b7fff #155dfc #1447e6 #193cb8 #1c398e #162456".split(), 
+"indigo":  "#eef2ff #e0e7ff #c6d2ff #a3b3ff #7c86ff #615fff #4f39f6 #432dd7 #372aac #312c85 #1e1a4d".split(), 
+"violet":  "#f5f3ff #ede9fe #ddd6ff #c4b4ff #a684ff #8e51ff #7f22fe #7008e7 #5d0ec0 #4d179a #2f0d68".split(), 
+"purple":  "#faf5ff #f3e8ff #e9d4ff #dab2ff #c27aff #ad46ff #9810fa #8200db #6e11b0 #59168b #3c0366".split(), 
+"fuchsia": "#fdf4ff #fae8ff #f6cfff #f4a8ff #ed6aff #e12afb #c800de #a800b7 #8a0194 #721378 #4b004f".split(), 
+"pink":    "#fdf2f8 #fce7f3 #fccee8 #fda5d5 #fb64b6 #f6339a #e60076 #c6005c #a3004c #861043 #510424".split(), 
+"rose":    "#fff1f2 #ffe4e6 #ffccd3 #ffa1ad #ff637e #ff2056 #ec003f #c70036 #a50036 #8b0836 #4d0218".split(), 
+"slate":   "#f8fafc #f1f5f9 #e2e8f0 #cad5e2 #90a1b9 #62748e #45556c #314158 #1d293d #0f172b #020618".split(), 
+"gray":    "#f9fafb #f3f4f6 #e5e7eb #d1d5dc #99a1af #6a7282 #4a5565 #364153 #1e2939 #101828 #030712".split(), 
+"zinc":    "#fafafa #f4f4f5 #e4e4e7 #d4d4d8 #9f9fa9 #71717b #52525c #3f3f46 #27272a #18181b #09090b".split(), 
+"neutral": "#fafafa #f5f5f5 #e5e5e5 #d4d4d4 #a1a1a1 #737373 #525252 #404040 #262626 #171717 #0a0a0a".split(), 
+"stone":   "#fafaf9 #f5f5f4 #e7e5e4 #d6d3d1 #a6a09b #79716b #57534d #44403b #292524 #1c1917 #0c0a09".split(),
+}
 
 from plover.system import english_stenotype as e  # type: ignore
 from plover_python_dictionary_lib import get_context_from_system
@@ -315,7 +388,7 @@ def create_style_str(
 	else:
 		assert opacity is None
 
-	style_string = ';'.join('{}: {}'.format(key, value)
+	style_string = ';'.join('{}:{}'.format(key, value)
 							for key, value in sorted(style.items(), key=lambda x: x[0])
 							)
 	return style_string
@@ -388,7 +461,7 @@ def get_saved_object_file_last_modification_time()->Optional[float]:
 	except FileNotFoundError:
 		return None
 
-def reload_saved_objects():
+def reload_saved_objects()->None:
 	global objects
 	try:
 		d: typing.Any = tomlkit.loads(saved_object_file_path.read_text())
@@ -510,12 +583,20 @@ for stroke in adhoc_dict.keys():
 	assert not is_object_stroke(stroke), f"ad hoc stroke {stroke} can be misrecognized as object"
 enabled = True
 
-# NOTE it is very wrong to make `lookup` not a pure function
-# should use command plugin or https://github.com/user202729/plover-python-dictionary-cmd instead
-# (probably the former, more flexible)
-# (in practice it works anyway)
+def copy_style(style_string: str)->None:
+	# style_string should be output of create_style_str()
+	clipboard_copy(
+			'<?xml version="1.0" encoding="UTF-8" standalone="no"?>'
+			'<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">'
+			+ _marker_helper() +
+			f'<inkscape:clipboard style="{style_string}" />'
+			'</svg>', TARGET)
 
 def lookup(strokes: tuple[str, ...])->Optional[str]:
+	# NOTE it is very wrong to make `lookup` not a pure function
+	# should use command plugin or https://github.com/user202729/plover-python-dictionary-cmd instead
+	# (probably the former, more flexible)
+	# (in practice it works anyway)
 	if not inkscape_window_focused():
 		return None
 	if rofi_running:
@@ -541,12 +622,7 @@ def lookup(strokes: tuple[str, ...])->Optional[str]:
 		if is_style_stroke(stroke):
 			style_string = styles.get(stroke-Stroke("A"), None)
 			if style_string is not None:
-				clipboard_copy(
-						'<?xml version="1.0" encoding="UTF-8" standalone="no"?>'
-						'<svg xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape">'
-						+ _marker_helper() +
-						f'<inkscape:clipboard style="{style_string}" />'
-						'</svg>', TARGET)
+				copy_style(style_string)
 				return paste_style
 		if is_object_stroke(stroke):
 			if stroke==object_load_stroke:

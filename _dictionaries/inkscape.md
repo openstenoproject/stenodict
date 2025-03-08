@@ -52,9 +52,11 @@ The default settings are as follows:
 
    - `TA`: set stroke color to none (transparent)
    - `#TA`: set fill color to none
-   - `BLA`: set stroke color to black
-   - `#BLA`: set fill color to black
+   - `KA`: set stroke color to black
+   - `#KA`: set fill color to black
    - `BA`: set stroke color to blue
+   - `KBA`: set stroke color to light blue
+   - `TBA`: set stroke color to dark blue
    - `SA`: set stroke width to thin
    - `STPA`: set stroke width to thick
    - etc.
