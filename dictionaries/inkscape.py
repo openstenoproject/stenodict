@@ -592,6 +592,8 @@ def copy_style(style_string: str)->None:
 			f'<inkscape:clipboard style="{style_string}" />'
 			'</svg>', TARGET)
 
+left_hand = StrokeH("STKPWHRAO")
+
 def lookup(strokes: tuple[str, ...])->Optional[str]:
 	# NOTE it is very wrong to make `lookup` not a pure function
 	# should use command plugin or https://github.com/user202729/plover-python-dictionary-cmd instead
@@ -639,9 +641,14 @@ def lookup(strokes: tuple[str, ...])->Optional[str]:
 				return no_op
 			clipboard_copy(o.content, TARGET)
 			return paste_object
-		if stroke in StrokeH("STKPWHRAO"):
+		if stroke in left_hand:
 			notify_send(f"invalid stroke {stroke}")
 			return no_op
+	elif all(Stroke(s) in left_hand for s in strokes):
+		# another consequence of not using proper macro
+		# require https://github.com/openstenoproject/plover/pull/1160
+		# just comment out if you don't have the patch (but tool will be slightly less functional)
+		return "{plover:deleted}"
 	return None
 
-LONGEST_KEY = 1
+LONGEST_KEY = 3
