@@ -64,7 +64,7 @@ def settings()->tuple[dict[Stroke_, str], dict[Stroke_, str], Stroke_, Stroke_, 
 			"PWH" :"cyan",   # (mix of blue and green)
 			"PW"  :"blue",   # BLue
 			"PWHR":"sky",
-			"PH"  :"fuchsia",# Magenta
+			"PH"  :"fuchsia",# Magenta?
 			"PR"  :"gray",   # gRay  (?)
 			"WHR" :"teal",
 			"W"   :"violet",

@@ -21,11 +21,21 @@ Port of [Gilles Castel's shortcut manager](https://castel.dev/post/lecture-notes
 - Executables: `xclip`, `inkscape`, `xdotool`, `notify-send`, `rofi`
 - Python packages: `getactivewindow-x` (optional), `tomlkit`, `plover_python_dictionary_lib`
 
-
 ## Installation
 
 First install https://pypi.org/project/plover-python-dictionary/, then (restart Plover and)
 add the `inkscape.py` file as a dictionary to Plover.
+
+**Important**: If you're not running Plover with the patch in https://github.com/openstenoproject/plover/pull/1160,
+comment out the following lines from the file:
+
+```python
+elif all(Stroke(s) in left_hand for s in strokes):
+    # another consequence of not using proper macro
+    # require https://github.com/openstenoproject/plover/pull/1160
+    # just comment out if you don't have the patch (but tool will be slightly less functional)
+    return "{plover:deleted}"
+```
 
 ## Documentation
 
