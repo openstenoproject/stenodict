@@ -26,6 +26,7 @@ def settings()->tuple[dict[Stroke_, str], dict[Stroke_, str], Stroke_, Stroke_, 
 			StrokeH("KR"): copy_object,
 			StrokeH("SR"): paste_object,
 			Stroke("TPR"): "{#Escape}",
+			StrokeH("K"): "{#Control(k)}",  # merge paths
 			Stroke("KPW"): "{#BackSpace}", # shape following single-stroke-modifier
 			Stroke("PHR"): "{#Page_Up}",
 			Stroke("WHR"): "{#Page_Down}",
@@ -118,6 +119,7 @@ def settings()->tuple[dict[Stroke_, str], dict[Stroke_, str], Stroke_, Stroke_, 
 				Stroke("ST") : create_style_str(thickness=Thickness.normal),
 				Stroke("STP"): create_style_str(thickness=Thickness.thick),
 				Stroke("SK") : create_style_str(fill_opacity=0.3, stroke_opacity=0.3, opacity=0.3),
+				Stroke("SW") : create_style_str(fill_opacity=0.6, stroke_opacity=0.6, opacity=0.6),
 				Stroke("SKW"): create_style_str(fill_opacity=1, stroke_opacity=1, opacity=1),
 				})
 
