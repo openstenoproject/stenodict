@@ -4,7 +4,7 @@ title: Cross Platform Movement
 version: 1
 date: 2015-11-7
 filename: cross_platform_movement
-author: Ted Morin
+author: Thea Morin
 tags: commands shortcuts windows linux mac
 what: Movement and selection across Mac, Windows, and Linux
 formats:

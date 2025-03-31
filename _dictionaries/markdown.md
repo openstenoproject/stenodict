@@ -4,7 +4,7 @@ title: Markdown
 version: 1
 date: 2015-10-30
 filename: markdown
-author: Ted Morin
+author: Thea Morin
 tags: programming shortcuts symbols
 what: Best markup language meets best text entry system
 formats:

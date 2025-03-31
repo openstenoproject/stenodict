@@ -4,7 +4,7 @@ title: Emoji
 version: 5
 date: 2015-12-23
 filename: emoji
-author: Ted Morin
+author: Thea Morin
 tags: symbols
 what: Complete Emoji dictionary 😃
 formats:

@@ -4,7 +4,7 @@ title: Pokémon
 version: 1
 date: 2015-11-21
 filename: pokemon
-author: Ted Morin
+author: Thea Morin
 tags: words
 what: First 151 Pokémon written with Plover theory
 formats:
