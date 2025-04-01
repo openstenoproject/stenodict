@@ -4,7 +4,7 @@ title: UK Spellings
 date: 2016-03-17
 version: 3
 filename: uk
-author: Ted Morin
+author: Thea Morin
 tags: words briefs
 what: Replace US spellings in Plover's default dictionary
 formats:

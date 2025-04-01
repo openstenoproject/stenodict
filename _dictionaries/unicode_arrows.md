@@ -4,7 +4,7 @@ title: Arrows
 version: 1
 date: 2015-10-30
 filename: unicode_arrows
-author: Ted Morin
+author: Thea Morin
 tags: symbols
 what: Symbolic arrows → → made easy
 formats:

@@ -4,7 +4,7 @@ title: Spectacle
 version: 1
 date: 2015-11-13
 filename: spectacle
-author: Ted Morin
+author: Thea Morin
 tags: commands program-specific mac
 what: Window management with Spectacle, the free application for OS X
 formats:
